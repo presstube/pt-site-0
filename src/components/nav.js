@@ -1,7 +1,7 @@
 
 import React from "react"
 
-import Brand from "./brand"
+import TopScrolly from "./top-scrolly"
 import NavLink from "./nav-link"
 
 export default class Nav extends React.Component {
@@ -12,15 +12,17 @@ export default class Nav extends React.Component {
           margin: 20
         }}
       >
-        <Brand name="brand"/>
+        <NavLink to="/home"><TopScrolly name="brand"/></NavLink>
         <ul>
           <li><NavLink to="/sketchbook">Sketchbook</NavLink></li>
           <li><NavLink to="/wall">Wall</NavLink></li>
           <li><NavLink to="/boiled-drawings">Boiled Drawings</NavLink></li>
           <li><NavLink to="/mala">Mala</NavLink></li>
         </ul>
-        <Brand name="brand"/>
+        <NavLink to="/yes"><TopScrolly name="yesbutton"/></NavLink>
       </div>
     )
   }
 }
+/*
+*/

@@ -1,7 +1,7 @@
 
 import React from "react"
 
-export default class Brand extends React.Component {
+export default class TopScrolly extends React.Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired
