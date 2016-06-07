@@ -1,11 +1,11 @@
 
 import React from "react"
 
-export default class Yes extends React.Component {
+export default class Mala extends React.Component {
   render () {
     return (
       <div>
-        Yes
+        Mala
       </div>
     )
   }

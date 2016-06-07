@@ -1,14 +1,17 @@
 
 import React from "react"
 
-import TopScrolly from "./top-scrolly"
-import NavLink from "./nav-link"
+import TopScrolly from "./TopScrolly"
+import NavLink from "./NavLink"
 
 export default class Nav extends React.Component {
   render () {
     return (
       <div
         style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
           margin: 20
         }}
       >

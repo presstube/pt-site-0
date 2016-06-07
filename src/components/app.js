@@ -1,19 +1,14 @@
 
 import React from "react"
 
-import Nav from "./nav"
+import Nav from "./Nav"
 
 export default class App extends React.Component {
   render () {
     return (
-      <div
-        style={{
-          // width: window.innerWidth,
-          // height: window.innerHeight,
-          // backgroundColor: "pink"
-        }}>
-        <Nav />
+      <div>
         {this.props.children}
+        <Nav />
       </div>
     )
   }

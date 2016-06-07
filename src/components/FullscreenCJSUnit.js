@@ -1,7 +1,13 @@
+/*
+  TODO:
+  - should load cjs if not already loaded?
+  - use async/await for async?
+*/
+
 
 import React from "react"
 
-export default class TopScrolly extends React.Component {
+export default class FullscreenCJSUnit extends React.Component {
 
   static propTypes = {
     name: React.PropTypes.string.isRequired
@@ -17,8 +23,6 @@ export default class TopScrolly extends React.Component {
     canvas: null,
     sw: 0,
     sh: 0,
-    w: 0,
-    h: 0,
     dpr: 1,
     shrinkScale: 1
   }
@@ -42,29 +46,9 @@ export default class TopScrolly extends React.Component {
     stage.update()
     createjs.Ticker.setFPS(fps)
     createjs.Ticker.addEventListener("tick", stage)
-    main.addEventListener("tick", this.onTick.bind(this))
     window.addEventListener("resize", this.onResize.bind(this))
-    window.addEventListener("scroll", this.onScroll.bind(this))
     Object.assign(this, {stage, main, libProps})
     this.onResize()
-  }
-
-  onTick() {
-    const {main} = this
-    const {currentFrame, totalFrames} = main
-    if (currentFrame === totalFrames - 1) main.stop()
-    // console.log(main)
-  }
-
-  onScroll() {
-    const {main} = this
-    const {totalFrames} = main
-    const {scrollTop} = document.body
-    const frame = scrollTop < 0
-      ? (totalFrames - 1) - Math.abs(scrollTop)
-      : (totalFrames - 1)
-    main.gotoAndStop(frame)
-    console.log(scrollTop)
   }
 
   onResize() {
@@ -79,40 +63,34 @@ export default class TopScrolly extends React.Component {
       shrinkScale = sw < w ? sw / w : 1
       shrinkScale = (h*shrinkScale >= sh) ? sh / h : shrinkScale
     }
-    this.setState({w, h, sw, sh, dpr, shrinkScale}, () => {
+    this.setState({sw, sh, dpr, shrinkScale}, () => {
       stage.scaleX = stage.scaleY = dpr * shrinkScale
-      // main.x = (sw / shrinkScale) / 2
-      // main.y = (sh / shrinkScale) / 2
+      main.x = (sw / shrinkScale) / 2
+      main.y = (sh / shrinkScale) / 2
       stage.update()
     })
   }
 
   render() {
-    const {w, h, sw, sh, dpr} = this.state
-    // const {width, height} = this.libProps
-    // console.log(width, height)
-    console.log(this.libProps)
+    const {sw, sh, dpr} = this.state
     return (
       <div
         style={{
-          position: "relative",
+          position: "absolute",
           overflow: "hidden",
-          // top: 0,
-          // left: 0,
-          width: w,
-          height: h,
-          borderStyle: "solid",
-          borderWidth: 1
+          top: 0,
+          left: 0,
+          width: sw,
+          height: sh
         }}
       >
         <canvas
           ref={el => {this.canvas=el}}
-          width={w * dpr}
-          height={h * dpr}
+          width={sw * dpr}
+          height={sh * dpr}
           style={{
-            overflow: "hidden",
-            width: w,
-            height: h
+            width: sw,
+            height: sh
           }}>
         </canvas>
       </div>
