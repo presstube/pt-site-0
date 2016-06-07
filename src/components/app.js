@@ -8,6 +8,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Nav />
+        {this.props.children}
       </div>
     )
   }
