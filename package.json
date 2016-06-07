@@ -1,7 +1,7 @@
 {
-  "name": "turkey",
+  "name": "pt-site-0",
   "version": "1.0.0",
-  "description": "Exploring a turnkey starting point for JS projects.",
+  "description": "Presstube site.",
   "main": "src/main.js",
   "scripts": {
     "beforebuild": "mkdir -p build && cp index.html build",
@@ -11,7 +11,7 @@
     "lint": "eslint src/main.js",
     "postversion": "git push && git push --tags",
     "build-production": "npm run beforebuild && webpack -p --devtool sourcemap",
-    "deploy": "npm run build-production && surge --domain turkey.surge.sh --project ./build"
+    "deploy": "npm run build-production && surge --domain presstube.surge.sh --project ./build"
   },
   "repository": {
     "type": "git",
