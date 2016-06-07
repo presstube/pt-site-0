@@ -1,13 +1,13 @@
 
 import React from "react"
 
-import Brand from "./brand"
+import Nav from "./nav"
 
 export default class App extends React.Component {
   render () {
     return (
       <div>
-        <Brand name="brand" />
+        <Nav />
       </div>
     )
   }
