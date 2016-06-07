@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="main" itemID="5751cf38-00000018" lastModified="1465304323">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="main" itemID="5751cf38-00000018" lastModified="1465317581">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
@@ -9,12 +9,12 @@
           <frames>
             <DOMFrame index="0" duration="120" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="pt-logo-unfolding" symbolType="graphic" centerPoint3DX="2.4" centerPoint3DY="-0.9" loop="play once">
+                <DOMSymbolInstance libraryItemName="pt-logo-unfolding" symbolType="graphic" centerPoint3DX="1.9" centerPoint3DY="-0.4" loop="play once">
                   <matrix>
-                    <Matrix a="0.5" d="0.5" ty="-10"/>
+                    <Matrix a="0.5" d="0.5" tx="-0.5" ty="-9.5"/>
                   </matrix>
                   <transformationPoint>
-                    <Point y="20"/>
+                    <Point/>
                   </transformationPoint>
                 </DOMSymbolInstance>
               </elements>

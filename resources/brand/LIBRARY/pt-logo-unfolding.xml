@@ -1,11 +1,11 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="pt-logo-unfolding" itemID="574c3721-0000004a" lastModified="1464982335" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="pt-logo-unfolding" itemID="574c3721-0000004a" lastModified="1465317069" lastUniqueIdentifier="1">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
   <timeline>
     <DOMTimeline name="pt-logo-unfolding" currentFrame="119">
       <layers>
-        <DOMLayer name="Layer 1" color="#4F80FF" locked="true">
+        <DOMLayer name="Layer 1" color="#4F80FF">
           <frames>
             <DOMFrame index="0" duration="10" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
@@ -30,7 +30,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 2" color="#9933CC" locked="true">
+        <DOMLayer name="Layer 2" color="#9933CC">
           <frames>
             <DOMFrame index="0" duration="10" keyMode="9728">
               <elements/>
@@ -49,7 +49,7 @@
             </DOMFrame>
             <DOMFrame index="20" duration="10" tweenType="motion" motionTweenSnap="true" keyMode="22017">
               <elements>
-                <DOMSymbolInstance libraryItemName="p1">
+                <DOMSymbolInstance libraryItemName="p1" selected="true">
                   <transformationPoint>
                     <Point/>
                   </transformationPoint>
@@ -70,7 +70,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 3" color="#FF800A" locked="true">
+        <DOMLayer name="Layer 3" color="#FF800A">
           <frames>
             <DOMFrame index="0" duration="20" keyMode="9728">
               <elements/>
@@ -101,7 +101,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 4" color="#FF4FFF" locked="true">
+        <DOMLayer name="Layer 4" color="#FF4FFF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="30" keyMode="9728">
               <elements/>
@@ -132,7 +132,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 5" color="#009999" locked="true">
+        <DOMLayer name="Layer 5" color="#009999">
           <frames>
             <DOMFrame index="0" duration="40" keyMode="9728">
               <elements/>
@@ -163,7 +163,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 6" color="#808080" locked="true">
+        <DOMLayer name="Layer 6" color="#808080">
           <frames>
             <DOMFrame index="0" duration="50" keyMode="9728">
               <elements/>
@@ -194,7 +194,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 7" color="#669900" locked="true">
+        <DOMLayer name="Layer 7" color="#669900">
           <frames>
             <DOMFrame index="0" duration="60" keyMode="9728">
               <elements/>
@@ -256,7 +256,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 9" color="#4F80FF" locked="true">
+        <DOMLayer name="Layer 9" color="#4F80FF">
           <frames>
             <DOMFrame index="0" duration="80" keyMode="9728">
               <elements/>
@@ -287,7 +287,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 10" color="#9933CC" locked="true">
+        <DOMLayer name="Layer 10" color="#9933CC">
           <frames>
             <DOMFrame index="0" duration="90" keyMode="9728">
               <elements/>
@@ -318,7 +318,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 11" color="#FF800A" locked="true">
+        <DOMLayer name="Layer 11" color="#FF800A">
           <frames>
             <DOMFrame index="0" duration="100" keyMode="9728">
               <elements/>
@@ -349,7 +349,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Layer 12" color="#FF4FFF" current="true" isSelected="true">
+        <DOMLayer name="Layer 12" color="#FF4FFF">
           <frames>
             <DOMFrame index="0" duration="110" keyMode="9728">
               <elements/>

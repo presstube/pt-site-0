@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="p2" itemID="5744ff44-00000021" lastModified="1464612996">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="p2" itemID="5744ff44-00000021" lastModified="1465317546">
   <timeline>
     <DOMTimeline name="p2">
       <layers>
@@ -17,7 +17,7 @@
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!0 800|0 0"/>
+                    <Edge strokeStyle="1" edges="!0 800S4|0 0"/>
                   </edges>
                 </DOMShape>
               </elements>
