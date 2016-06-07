@@ -7,7 +7,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div>
-        <Brand />
+        <Brand name="brand" />
       </div>
     )
   }
