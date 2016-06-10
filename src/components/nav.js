@@ -2,7 +2,7 @@
 import React from "react"
 
 import TopScrolly from "./TopScrolly"
-import NavLink from "./NavLink"
+// import NavLink from "./NavLink"
 
 export default class Nav extends React.Component {
   render () {
@@ -12,9 +12,15 @@ export default class Nav extends React.Component {
           position: "fixed",
           left: 0,
           top: 0,
-          margin: 20
+          // margin: 20
         }}
       >
+        <TopScrolly name="nav" maxWidth={1024}/>
+      </div>
+    )
+  }
+}
+/*
         <NavLink to="/home"><TopScrolly name="brand"/></NavLink>
         <ul>
           <li><NavLink to="/sketchbook">Sketchbook</NavLink></li>
@@ -23,9 +29,4 @@ export default class Nav extends React.Component {
           <li><NavLink to="/mala">Mala</NavLink></li>
         </ul>
         <NavLink to="/yes"><TopScrolly name="yesbutton"/></NavLink>
-      </div>
-    )
-  }
-}
-/*
 */

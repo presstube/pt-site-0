@@ -4,7 +4,12 @@ import React from "react"
 export default class TopScrolly extends React.Component {
 
   static propTypes = {
-    name: React.PropTypes.string.isRequired
+    name: React.PropTypes.string.isRequired,
+    maxWidth: React.PropTypes.number
+  }
+
+  static defaultProps = {
+    maxWidth: null
   }
 
   constructor(props) {
@@ -14,11 +19,14 @@ export default class TopScrolly extends React.Component {
   }
 
   state = {
-    canvas: null,
+    stage: null,
+    main: null,
+    libProps: {
+      width: 0,
+      height: 0
+    },
     sw: 0,
     sh: 0,
-    w: 0,
-    h: 0,
     dpr: 1,
     shrinkScale: 1
   }
@@ -38,26 +46,26 @@ export default class TopScrolly extends React.Component {
     const root = new lib[name]
     const {main} = root
     const stage = new createjs.Stage(this.canvas)
-    stage.addChild(root)
-    stage.update()
-    createjs.Ticker.setFPS(fps)
-    createjs.Ticker.addEventListener("tick", stage)
-    main.addEventListener("tick", this.onTick.bind(this))
-    window.addEventListener("resize", this.onResize.bind(this))
-    window.addEventListener("scroll", this.onScroll.bind(this))
-    Object.assign(this, {stage, main, libProps})
-    this.onResize()
+    this.setState({stage, main, libProps}, () => {
+      stage.addChild(root)
+      stage.update()
+      createjs.Ticker.setFPS(fps)
+      createjs.Ticker.addEventListener("tick", stage)
+      main.addEventListener("tick", this.onMainTick.bind(this))
+      window.addEventListener("resize", this.onResize.bind(this))
+      window.addEventListener("scroll", this.onScroll.bind(this))
+      this.onResize()
+    })
   }
 
-  onTick() {
-    const {main} = this
+  onMainTick() {
+    const {main} = this.state
     const {currentFrame, totalFrames} = main
     if (currentFrame === totalFrames - 1) main.stop()
-    // console.log(main)
   }
 
   onScroll() {
-    const {main} = this
+    const {main} = this.state
     const {totalFrames} = main
     const {scrollTop} = document.body
     const frame = scrollTop < 0
@@ -67,50 +75,51 @@ export default class TopScrolly extends React.Component {
   }
 
   onResize() {
-    const {stage, main} = this
-    const {width: w, height: h} = this.libProps
+    const {stage, libProps} = this.state
+    const {width} = libProps
+    const maxWidth = this.props.maxWidth ? this.props.maxWidth : width
     const {innerWidth: sw, innerHeight: sh, devicePixelRatio: dpr} = window
-    let shrinkScale = 1
-    if (sw >= sh) {
-      shrinkScale = (sh < h) ? sh / h : 1
-      shrinkScale = (w*shrinkScale >= sw) ? sw / w : shrinkScale
-    } else {
-      shrinkScale = sw < w ? sw / w : 1
-      shrinkScale = (h*shrinkScale >= sh) ? sh / h : shrinkScale
-    }
-    this.setState({w, h, sw, sh, dpr, shrinkScale}, () => {
+    const shrinkScale = (maxWidth && sw > maxWidth)
+      ? maxWidth / width
+      : sw / width
+    this.setState({sw, sh, dpr, shrinkScale}, () => {
       stage.scaleX = stage.scaleY = dpr * shrinkScale
-      // main.x = (sw / shrinkScale) / 2
-      // main.y = (sh / shrinkScale) / 2
       stage.update()
     })
   }
 
   render() {
-    const {w, h, dpr} = this.state
+    const {sw, dpr, shrinkScale} = this.state
+    const {width, height} = this.state.libProps
+    const {maxWidth} = this.props
+    const scaledHeight = height * shrinkScale
+    const scaledWidth = width * shrinkScale
+    let desktopStyle = {
+      borderStyle: "solid",
+      borderWidth: 1,
+      borderRadius: 6,
+      margin: 20
+    }
+    desktopStyle = maxWidth && sw > maxWidth
+      ? desktopStyle
+      : {}
     return (
       <div
         style={{
-          position: "relative",
-          overflow: "hidden",
-          // top: 0,
-          // left: 0,
-          width: w,
-          height: h,
-          borderStyle: "solid",
-          borderWidth: 1,
-          borderColor: "#222",
-          borderRadius: 4
+          position: "absolute",
+          textAlign: "left",
+          width: scaledWidth,
+          height: scaledHeight,
+          ...desktopStyle
         }}
       >
         <canvas
           ref={el => {this.canvas=el}}
-          width={w * dpr}
-          height={h * dpr}
+          width={scaledWidth * dpr}
+          height={scaledHeight * dpr}
           style={{
-            overflow: "hidden",
-            width: w,
-            height: h
+            width: scaledWidth,
+            height: scaledHeight,
           }}>
         </canvas>
       </div>
