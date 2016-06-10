@@ -12,10 +12,11 @@ export default class Nav extends React.Component {
           position: "fixed",
           left: 0,
           top: 0,
+          // textAlign: "center"
           // margin: 20
         }}
       >
-        <TopScrolly name="nav" maxWidth={1024}/>
+        <TopScrolly name="nav" maxWidth={666}/>
       </div>
     )
   }
