@@ -8,7 +8,7 @@ export default class App extends React.Component {
     return (
       <div>
         {this.props.children}
-        <Nav />
+        <Nav name="nav" maxWidth={600}/>
       </div>
     )
   }

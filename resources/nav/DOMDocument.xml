@@ -1,9 +1,10 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" gridColor="#CCCCCC" width="480" height="80" frameRate="60" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 15.1 build 13" majorVersion="15" minorVersion="1" buildNumber="13" gridSnapTo="true" guidesSnapTo="false" gridVisible="true" snapAlign="false" objectsSnapTo="false" viewAngle3D="48.8658374504693" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" gridColor="#CCCCCC" width="480" height="80" frameRate="60" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 15.1 build 13" majorVersion="15" minorVersion="1" buildNumber="13" gridSnapTo="true" guidesSnapTo="false" gridVisible="true" snapAlign="false" viewAngle3D="48.8658374504693" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
      <symbols>
           <Include href="dot.xml" loadImmediate="false" itemID="57450826-0000008a" lastModified="1464634427"/>
           <Include href="main.xml" loadImmediate="false" itemID="5751cf38-00000018" lastModified="1465587102"/>
+          <Include href="number.xml" loadImmediate="false" itemID="575cb0a0-0000000e" lastModified="1465693431"/>
           <Include href="number-animation.xml" loadImmediate="false" itemID="574c8eb2-0000009d" lastModified="1465587322"/>
-          <Include href="numbers.xml" loadImmediate="false" itemID="575b168c-0000002b" lastModified="1465587462"/>
+          <Include href="numbers.xml" loadImmediate="false" itemID="575b168c-0000002b" lastModified="1465693041"/>
           <Include href="p1.xml" loadImmediate="false" itemID="5744fe14-00000007" lastModified="1465317539"/>
           <Include href="p2.xml" loadImmediate="false" itemID="5744ff44-00000021" lastModified="1465317546"/>
           <Include href="p3.xml" loadImmediate="false" itemID="574500d3-00000053" lastModified="1465317550"/>
@@ -13,14 +14,11 @@
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>
-                    <DOMLayer name="Layer 1" color="#4F80FF" current="true" isSelected="true">
+                    <DOMLayer name="Layer 1" color="#4F80FF">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMShape selected="true" isFloating="true">
-                                             <matrix>
-                                                  <Matrix tx="0.5"/>
-                                             </matrix>
+                                        <DOMShape>
                                              <strokes>
                                                   <StrokeStyle index="1">
                                                        <SolidStroke scaleMode="normal">
@@ -31,9 +29,9 @@
                                                   </StrokeStyle>
                                              </strokes>
                                              <edges>
-                                                  <Edge strokeStyle="1" edges="!8000 0S4|8000 1600!1600 0|1600 1600"/>
-                                                  <Edge cubics="!8000 0(;8000,0 8000,1600 8000,1600q8000 0 8000 1600);"/>
-                                                  <Edge cubics="!1600 0(;1600,0 1600,1600 1600,1600q1600 0 1600 1600);"/>
+                                                  <Edge strokeStyle="1" edges="!8010 0|8010 1600!1610 0|1610 1600"/>
+                                                  <Edge cubics="!8010 0(;8010,0 8010,1600 8010,1600q8010 0 8010 1600);"/>
+                                                  <Edge cubics="!1610 0(;1610,0 1610,1600 1610,1600q1610 0 1610 1600);"/>
                                              </edges>
                                         </DOMShape>
                                         <DOMSymbolInstance libraryItemName="yes" symbolType="graphic" loop="play once">
@@ -44,19 +42,19 @@
                                                   <Point/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="numbers">
+                                        <DOMSymbolInstance libraryItemName="numbers" name="numbers">
                                              <matrix>
                                                   <Matrix tx="100.5" ty="30"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="140" y="10"/>
+                                                  <Point/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Layer 3" color="#FF800A">
+                    <DOMLayer name="Layer 3" color="#FF800A" current="true" isSelected="true">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
