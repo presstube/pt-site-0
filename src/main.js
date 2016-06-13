@@ -13,8 +13,8 @@ import Yes from "./components/pages/Yes"
 render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
-      <Route path="/home" component={Home}/>
-      <Route path="/sketchbook" component={Sketchbook}/>
+      <Route path="/0" component={Home}/>
+      <Route path="/1" component={Sketchbook}/>
       <Route path="/wall" component={Wall}/>
       <Route path="/boiled-drawings" component={BoiledDrawings}/>
       <Route path="/mala" component={Mala}/>

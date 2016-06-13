@@ -1,4 +1,6 @@
 
+import { browserHistory } from "react-router"
+
 import React from "react"
 
 export default class Nav extends React.Component {
@@ -64,7 +66,12 @@ export default class Nav extends React.Component {
       number.gotoAndStop(index)
       number.addEventListener("click", (e) => {
         // reach out and touch somebody
-        console.log("number clicked ", index)
+        // browserHistory.push("/#/"+index)
+        // this.props.history.push("/0");
+        // console.log("number clicked ", index)
+        // console.log(this.props.history)
+        console.log(browserHistory)
+        browserHistory.push("/#/0")
       })
     })
   }
