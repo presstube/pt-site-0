@@ -2,6 +2,7 @@
 import React from "react"
 
 import Nav from "./Nav"
+import FullscreenCJSUnit from "./FullscreenCJSUnit"
 
 export default class App extends React.Component {
 
@@ -14,6 +15,7 @@ export default class App extends React.Component {
       <div>
         {this.props.children}
         <Nav />
+        <FullscreenCJSUnit name="aunit"/>
       </div>
     )
   }

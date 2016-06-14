@@ -44,11 +44,25 @@ export default class FullscreenCJSUnit extends React.Component {
     const stage = new createjs.Stage(this.canvas)
     stage.addChild(root)
     stage.update()
-    createjs.Ticker.setFPS(fps)
+
+    const circle = new createjs.Shape()
+    circle.graphics.beginFill("red").drawCircle(0, 0, 2)
+    main.addChild(circle)
+
+    createjs.Ticker.setFPS(60)
     createjs.Ticker.addEventListener("tick", stage)
+    main.addEventListener("tick", this.onMainTick.bind(this))
     window.addEventListener("resize", this.onResize.bind(this))
-    Object.assign(this, {stage, main, libProps})
+    Object.assign(this, {stage, main, libProps, circle})
     this.onResize()
+  }
+
+  onMainTick() {
+    const {main, circle} = this
+    const mark = main.children[0]
+    circle.x = mark.x
+    circle.y = mark.y
+    // console.log('c: ', main.children[0].children)
   }
 
   onResize() {
@@ -90,7 +104,15 @@ export default class FullscreenCJSUnit extends React.Component {
           height={sh * dpr}
           style={{
             width: sw,
-            height: sh
+            height: sh,
+            // backgroundColor: "grey"
+          }}
+          onClick={(e) => {
+            const {main} = this
+            const mark = main.children[0]
+            console.log("click ", main.children[0])
+
+
           }}>
         </canvas>
       </div>

@@ -23,18 +23,15 @@ export default class Nav extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          height: 80,
-        }}
-      >
+      <div style={{height: 80}}>
         <NavItem><TopScrolly name="brand"/></NavItem>
-
         {_.times(10, index =>
           <NavItem><NavNumber number={index}></NavNumber></NavItem>
         )}
-
-        <NavItem><TopScrolly name="yesbutton"/></NavItem>
+        <NavItem><div style={{
+          width: 80, 
+          textAlign: "center",
+          fontSize: "120%"}}>YES</div></NavItem>
       </div>
     )
   }
