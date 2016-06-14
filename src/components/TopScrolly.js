@@ -94,25 +94,28 @@ export default class TopScrolly extends React.Component {
     const {maxWidth} = this.props
     const scaledHeight = height * shrinkScale
     const scaledWidth = width * shrinkScale
-    let desktopStyle = {
-      borderStyle: "solid",
-      borderWidth: 1,
-      borderRadius: 6,
-      margin: 20
-    }
-    desktopStyle = maxWidth && sw > maxWidth
-      ? desktopStyle
-      : {
-      borderWidth: 1,
-      borderStyle: "hidden hidden solid hidden"
-    }
+    // let desktopStyle = {
+    //   borderStyle: "solid",
+    //   borderWidth: 1,
+    //   borderRadius: 6,
+    //   margin: 20
+    // }
+    // desktopStyle = maxWidth && sw > maxWidth
+    //   ? desktopStyle
+    //   : {
+    //   borderWidth: 1,
+    //   borderStyle: "hidden hidden solid hidden"
+    // }
     return (
       <div
         style={{
-          position: "absolute",
-          textAlign: "center",
-          width: sw,
-          height: scaledHeight,
+          display: "inline-block",
+          position: "relative",
+          // textAlign: "center",
+          height: 80, 
+          width: 80
+          // width: sw,
+          // height: scaledHeight,
         }}
       >
         <canvas
@@ -120,14 +123,20 @@ export default class TopScrolly extends React.Component {
           width={scaledWidth * dpr}
           height={scaledHeight * dpr}
           style={{
+            // display: "inline-block",
             borderColor: "#ccc",
             backgroundColor: "white",
             width: scaledWidth,
             height: scaledHeight,
-            ...desktopStyle
+            // ...desktopStyle
           }}>
         </canvas>
       </div>
     )
   }
 }
+
+
+/*
+
+*/
