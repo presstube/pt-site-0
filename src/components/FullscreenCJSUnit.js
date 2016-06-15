@@ -46,7 +46,7 @@ export default class FullscreenCJSUnit extends React.Component {
     stage.update()
 
     const circle = new createjs.Shape()
-    circle.graphics.beginFill("red").drawCircle(0, 0, 2)
+    circle.graphics.beginFill("red").drawCircle(0, 0, 10)
     main.addChild(circle)
 
     createjs.Ticker.setFPS(60)
