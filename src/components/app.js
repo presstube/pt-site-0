@@ -3,14 +3,14 @@ import TopScrolly from "./TopScrolly"
 
 export default class App extends React.Component {
   render () {
-    const sw = window.innerWidth
     const spacing = 20
     return (
       <div style={{
-        margin: spacing,
-        width: "100%",
+        padding: spacing,
+        // width: "100%",
+        width: "calc(100% - 40px)",
         // width: sw - (spacing*2),
-        maxWidth: 1400
+        // maxWidth: 1400
       }}>
         <div // nav
           style={{
@@ -35,8 +35,8 @@ export default class App extends React.Component {
               // maxWidth: 500
             }}
             src="https://player.vimeo.com/video/172081140"
-            width="640"
-            height="360"
+            width="100%"
+            // height="360"
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
@@ -44,10 +44,10 @@ export default class App extends React.Component {
           ></iframe>
           <p>
             <a href="">Intro</a>,
-            <a href="">1.Life</a>,
-            <a href="">2.Imagination</a>,
-            <a href="">3.Meditation</a>,
-            <a href="">4.Systems</a>
+            <a href="">1-Life</a>,
+            <a href="">2-Imagination</a>,
+            <a href="">3-Meditation</a>,
+            <a href="">4-Systems</a>
           </p>
         </div>
         <div // project unit
@@ -60,8 +60,8 @@ export default class App extends React.Component {
           />
           <p>
             <a href="">full</a>,
-            <a href="">detail 1 </a>,
-            <a href="">detail 2 </a>,
+            <a href="">detail 1</a>,
+            <a href="">detail 2</a>,
             <a href="">detail 3</a>
           </p>
           <h2>Dark Lord Grocery Delivery</h2>
