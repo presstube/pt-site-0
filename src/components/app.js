@@ -3,10 +3,25 @@ import TopScrolly from "./TopScrolly"
 import SketchbookUnit from "./SketchbookUnit"
 
 export default class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+    // window.addEventListener("resize", () => {
+    //   console.log("resize")
+    //   this.setState({screenHeight: window.innerHeight})
+    // })
+  }
+
+  state = {
+    // screenHeight: window.innerHeight
+  }
+
   render () {
+    console.log("sh: ", this.state.screenHeight)
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
     const spacing = 20
+    // const {screenHeight} = this.state
     return (
       <div style={{
         padding: spacing,
@@ -30,7 +45,13 @@ export default class App extends React.Component {
         </div>
         <h1>{projectName}</h1>
         {units.map((data, index) => {
-          return <SketchbookUnit key={index} data={data}/>
+          return (
+            <SketchbookUnit
+              key={index}
+              data={data}
+              // screenHeight={screenHeight}
+            />
+          )
         })}
       </div>
     )

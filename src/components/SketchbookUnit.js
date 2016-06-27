@@ -2,9 +2,16 @@ import _ from "lodash"
 import React from "react"
 
 export default class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.initWinHeight = window.innerHeight
+  }
+
   render () {
-    const data = this.props.data
+    const {data} = this.props
     const {name, price, sold, images, description} = data
+    // const initWinHeight = window.innerHeight
     return (
       <div // project unit
         style={{
@@ -12,7 +19,13 @@ export default class App extends React.Component {
       >
         <img
           src="img/dark-lord-grocery-delivery.jpg"
-          style={{width: "100%"}}
+          width="auto"
+          height={this.initWinHeight * 0.8}
+          // style={{
+          //   height: {screenHeight},
+          //   width: "auto"
+          // }}
+          // style={{width: "100%"}}
         />
         <h2>{name}</h2>
         <h3>
