@@ -1,8 +1,11 @@
 import React from "react"
 import TopScrolly from "./TopScrolly"
+import SketchbookUnit from "./SketchbookUnit"
 
 export default class App extends React.Component {
   render () {
+    const projectData = this.props.data.projects[0]
+    const {name: projectName, units} = projectData
     const spacing = 20
     return (
       <div style={{
@@ -25,8 +28,17 @@ export default class App extends React.Component {
         >
           <TopScrolly name="brand"/>
         </div>
-        <h1>Sketchbook</h1>
-        <div /* project videos*/
+        <h1>{projectName}</h1>
+        {units.map((data, index) => {
+          return <SketchbookUnit key={index} data={data}/>
+        })}
+      </div>
+    )
+  }
+}
+
+/*
+        <div /* project videos
           style={{
             marginBottom: spacing
           }}>
@@ -42,16 +54,21 @@ export default class App extends React.Component {
             mozallowfullscreen
             allowfullscreen
           ></iframe>
-          <p>
-            <h3>
+          <h3>
+            <p>
               <a href="">Intro</a>,
               <a href="">1-Life</a>,
               <a href="">2-Imagination</a>,
               <a href="">3-Meditation</a>,
               <a href="">4-Systems</a>
-            </h3>
-          </p>
+            </p>
+          </h3>
         </div>
+
+
+
+
+
         <div // project unit
           style={{
           }}
@@ -61,14 +78,14 @@ export default class App extends React.Component {
             style={{width: "100%"}}
           />
           <h2>Dark Lord Grocery Delivery</h2>
-          <p>
-            <h3>
+          <h3>
+            <p>
               <a href="">full</a>,
               <a href="">detail 1</a>,
               <a href="">detail 2</a>,
               <a href="">detail 3</a>
-            </h3>
-          </p>
+            </p>
+          </h3>
           <p>An 8x10.6" original sketchbook drawing from the Psychic Vomit Portrait series.</p>
           <p>Not all dark lords have glamorous jobs like stealing souls and ruling galaxies.</p>
           <p>Some deliver dark groceries.</p>
@@ -80,7 +97,10 @@ export default class App extends React.Component {
             </a>
           </h3>
         </div>
-      </div>
-    )
-  }
-}
+
+
+
+
+
+
+*/
