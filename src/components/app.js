@@ -11,7 +11,7 @@ export default class App extends React.Component {
   render () {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
-    const spacing = 20
+    const spacing = 40
     return (
       <div style={{
         padding: spacing,
@@ -23,6 +23,7 @@ export default class App extends React.Component {
             position: "relative",
             width: 80,
             height: 80,
+            marginBottom: spacing,
             // borderStyle: "solid",
             // borderWidth: 1,
             // borderRadius: 4,
@@ -31,7 +32,11 @@ export default class App extends React.Component {
         >
           <TopScrolly name="brand"/>
         </div>
-        <h1>{projectName}</h1>
+        <h1
+          style={{
+            marginBottom: spacing,
+          }}
+        >{projectName}</h1>
         {units.map((data, index) => {
           return (
             <SketchbookUnit
