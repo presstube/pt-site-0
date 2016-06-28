@@ -27,7 +27,6 @@ export default class SketchbookUnit extends React.Component {
       >
         <h2 id={slug}>{name}</h2>
         {imageEl}
-        
         <div
           style={{
             maxWidth: 500

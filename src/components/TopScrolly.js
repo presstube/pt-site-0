@@ -124,8 +124,8 @@ export default class TopScrolly extends React.Component {
           height={scaledHeight * dpr}
           style={{
             // display: "inline-block",
-            borderColor: "#ccc",
-            backgroundColor: "rgba(255, 255, 255, 0.3)",
+            // borderColor: "#ccc",
+            // backgroundColor: "rgba(255, 255, 255, 0.3)",
             width: scaledWidth,
             height: scaledHeight,
             // ...desktopStyle

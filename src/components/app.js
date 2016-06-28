@@ -23,10 +23,10 @@ export default class App extends React.Component {
             position: "relative",
             width: 80,
             height: 80,
-            borderStyle: "solid",
-            borderWidth: 1,
-            borderRadius: 4,
-            overflow: "hidden",
+            // borderStyle: "solid",
+            // borderWidth: 1,
+            // borderRadius: 4,
+            // overflow: "hidden",
           }}
         >
           <TopScrolly name="brand"/>
