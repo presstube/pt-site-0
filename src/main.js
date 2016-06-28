@@ -31,8 +31,8 @@ const data = {
             },
           ],
           description: [
+            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries.",
             "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries."
           ]
         },
         {
@@ -59,8 +59,8 @@ const data = {
             },
           ],
           description: [
+            "The array of moments doesn't start with your birth or end with your death.",
             "A 7.5\" x 11.5\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-            "An array of moments which doesn't start with your birth or end with your death."
           ]
         },
         {
@@ -87,8 +87,8 @@ const data = {
             },
           ],
           description: [
+            "Sitting and waiting patiently with burly, well developed antennae. Several intersection pockets are drifting through.",
             "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-            "Sitting and waiting patiently with burly, well developed antennae. Several intersection pockets are drifting through."
           ]
         }
       ]

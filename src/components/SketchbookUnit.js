@@ -23,6 +23,7 @@ export default class App extends React.Component {
           marginBottom: 60
         }}
       >
+        <h2 id={name}>{name}</h2>
         <img
           src={_.first(images).url}
           width={isPortrait ? "100%" : "auto"}
@@ -34,7 +35,6 @@ export default class App extends React.Component {
             maxWidth: 500
           }}
         >
-          <h2>{name}</h2>
           {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
           <h3>
             <a
