@@ -9,6 +9,7 @@ const data = {
       units: [
         {
           name: "Dark Lord Grocery Delivery",
+          slug: "dark-lord-grocery-delivery",
           price: 250,
           shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery?ref=shop_home_active_1",
           sold: true,
@@ -37,6 +38,7 @@ const data = {
         },
         {
           name: "Array of Moments",
+          slug: "array-of-moments",
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/ca/listing/400297521/array-of-moments",
@@ -65,6 +67,7 @@ const data = {
         },
         {
           name: "Bashful Fringe",
+          slug: "bashful-fringe",
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386818902/bashful-fringe",

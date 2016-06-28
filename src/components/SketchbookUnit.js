@@ -11,7 +11,7 @@ export default class App extends React.Component {
 
   render () {
     const {data, screenHeight} = this.props
-    const {name, price, sold, shopURL, images, description} = data
+    const {name, slug, price, sold, shopURL, images, description} = data
     console.log("name: ", C)
     const isPortrait = window.innerHeight > window.innerWidth
     const initWinWidth = window.innerWidth
@@ -23,7 +23,7 @@ export default class App extends React.Component {
           marginBottom: 60
         }}
       >
-        <h2 id={name}>{name}</h2>
+        <h2 id={slug}>{name}</h2>
         <img
           src={_.first(images).url}
           width={isPortrait ? "100%" : "auto"}
