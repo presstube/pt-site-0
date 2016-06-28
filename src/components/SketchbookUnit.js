@@ -13,7 +13,10 @@ export default class App extends React.Component {
     const {data, screenHeight} = this.props
     const {name, price, sold, shopURL, images, description} = data
     console.log("name: ", C)
-    // const initWinHeight = window.innerHeight
+    const isPortrait = window.innerHeight > window.innerWidth
+    const initWinWidth = window.innerWidth
+    const initWinHeight = window.innerHeight
+
     return (
       <div // project unit
         style={{
@@ -22,19 +25,25 @@ export default class App extends React.Component {
       >
         <img
           src={_.first(images).url}
-          width="auto"
-          // height={this.initWinHeight * 0.8}
-          height={screenHeight * 0.7 * window.devicePixelRatio}
+          width={isPortrait ? "100%" : "auto"}
+          height={isPortrait ? "auto" : this.initWinHeight * 0.8}
+          // height={screenHeight * 0.7 * window.devicePixelRatio}
         />
-        <h2>{name}</h2>
-        {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
-        <h3>
-          <a
-            href={shopURL}
-          >
-            {sold ? "SOLD" : `BUY: $${price}`}
-          </a>
-        </h3>
+        <div
+          style={{
+            maxWidth: 500
+          }}
+        >
+          <h2>{name}</h2>
+          {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
+          <h3>
+            <a
+              href={shopURL}
+            >
+              {sold ? "SOLD" : `BUY: $${price}`}
+            </a>
+          </h3>
+        </div>
       </div>
     )
   }
