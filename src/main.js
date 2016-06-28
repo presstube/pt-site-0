@@ -16,12 +16,13 @@ const data = {
           images: [
             {
               name: "full",
-              url: "img/dark-lord-grocery-delivery.jpg"
+              url: "img/dark-lord-grocery-delivery.jpg",
+              width: 3700,
+              height: 4892,
             },
             {
               name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"
-            },
+              url: "img/dark-lord-grocery-delivery-d1.jpg"            },
             {
               name: "detail 2",
               url: "img/dark-lord-grocery-delivery-d2.jpg"
@@ -45,7 +46,9 @@ const data = {
           images: [
             {
               name: "full",
-              url: "img/array-of-moments.jpg"
+              url: "img/array-of-moments.jpg",
+              width: 3200,
+              height: 4949,
             },
             {
               name: "detail 1",
@@ -74,7 +77,9 @@ const data = {
           images: [
             {
               name: "full",
-              url: "img/bashful-fringe.jpg"
+              url: "img/bashful-fringe.jpg",
+              width: 3500,
+              height: 4988,
             },
             {
               name: "detail 1",
