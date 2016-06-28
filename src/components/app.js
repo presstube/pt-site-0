@@ -6,14 +6,14 @@ export default class App extends React.Component {
 
   constructor(props) {
     super(props)
-    // window.addEventListener("resize", () => {
-    //   console.log("resize")
-    //   this.setState({screenHeight: window.innerHeight})
-    // })
+    window.addEventListener("resize", () => {
+      console.log("resize")
+      this.setState({screenHeight: window.innerHeight})
+    })
   }
 
   state = {
-    // screenHeight: window.innerHeight
+    screenHeight: window.innerHeight
   }
 
   render () {
@@ -21,7 +21,7 @@ export default class App extends React.Component {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
     const spacing = 20
-    // const {screenHeight} = this.state
+    const {screenHeight} = this.state
     return (
       <div style={{
         padding: spacing,
@@ -49,7 +49,7 @@ export default class App extends React.Component {
             <SketchbookUnit
               key={index}
               data={data}
-              // screenHeight={screenHeight}
+              screenHeight={screenHeight}
             />
           )
         })}

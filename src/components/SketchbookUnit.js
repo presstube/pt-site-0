@@ -9,7 +9,7 @@ export default class App extends React.Component {
   }
 
   render () {
-    const {data} = this.props
+    const {data, screenHeight} = this.props
     const {name, price, sold, images, description} = data
     // const initWinHeight = window.innerHeight
     return (
@@ -20,26 +20,10 @@ export default class App extends React.Component {
         <img
           src="img/dark-lord-grocery-delivery.jpg"
           width="auto"
-          height={this.initWinHeight * 0.8}
-          // style={{
-          //   height: {screenHeight},
-          //   width: "auto"
-          // }}
-          // style={{width: "100%"}}
+          // height={this.initWinHeight * 0.8}
+          height={screenHeight * 0.7 * window.devicePixelRatio}
         />
         <h2>{name}</h2>
-        <h3>
-          <p>
-            {images.map((data, index, coll) => {
-              const isLast = data === _.last(coll)
-              return (
-                <span key={index}>
-                  <a href={data.url}>{data.name}</a>{isLast ? null : ", "}
-                </span>
-              )
-            })}
-          </p>
-        </h3>
         {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
         <h3>
           <a
@@ -58,6 +42,18 @@ export default class App extends React.Component {
 
 /*
 
+        <h3>
+          <p>
+            {images.map((data, index, coll) => {
+              const isLast = data === _.last(coll)
+              return (
+                <span key={index}>
+                  <a href={data.url}>{data.name}</a>{isLast ? null : ", "}
+                </span>
+              )
+            })}
+          </p>
+        </h3>
 
 
 */
