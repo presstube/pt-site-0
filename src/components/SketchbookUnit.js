@@ -1,5 +1,6 @@
 import _ from "lodash"
 import React from "react"
+import C from "../constants"
 
 export default class App extends React.Component {
 
@@ -10,15 +11,17 @@ export default class App extends React.Component {
 
   render () {
     const {data, screenHeight} = this.props
-    const {name, price, sold, images, description} = data
+    const {name, price, sold, shopURL, images, description} = data
+    console.log("name: ", C)
     // const initWinHeight = window.innerHeight
     return (
       <div // project unit
         style={{
+          marginBottom: 60
         }}
       >
         <img
-          src="img/dark-lord-grocery-delivery.jpg"
+          src={_.first(images).url}
           width="auto"
           // height={this.initWinHeight * 0.8}
           height={screenHeight * 0.7 * window.devicePixelRatio}
@@ -27,9 +30,9 @@ export default class App extends React.Component {
         {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
         <h3>
           <a
-            href="https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery?ref=shop_home_active_1"
+            href={shopURL}
           >
-            {sold ? "SOLD" : `Buy | $${price}`}
+            {sold ? "SOLD" : `BUY: $${price}`}
           </a>
         </h3>
       </div>
