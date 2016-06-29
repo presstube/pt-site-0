@@ -24,7 +24,7 @@ export default class SketchbookUnit extends React.Component {
         id={slug}
         ref={(node) => {this.node = node}}
         style={{
-          marginBottom: "40%"
+          marginBottom: "20%"
         }}
       >
         {imageEl}

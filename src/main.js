@@ -284,6 +284,45 @@ const data = {
             "A 8.1\" x 10.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
+        {
+          name: "Forensic Stalk Inspector",
+          slug: "forensic-stalk-inspector",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400386893/forensic-stalk-inspector",
+          images: [
+            {
+              name: "full",
+              url: "img/forensic-stalk-inspector.jpg",
+              width: 3600,
+              height: 4826,
+            },
+          ],
+          description: [
+            "The inspector's quivering mouth barrel can sense that you are lying. Before him you cannot hide.",
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Garbage Cream Job Interview",
+          slug: "garbage-cream-job-interview",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400514201/garbage-cream-job-interview",
+          images: [
+            {
+              name: "full",
+              url: "img/garbage-cream-job-interview.jpg",
+              width: 3600,
+              height: 4775,
+            },
+          ],
+          description: [
+            "The enthusiasm is palpable. Ready sir, yes. Been ready all my life. Proud and smelly. Crisp and fetid. Garbage cream dollop against regal boxy stripes.",
+            "The power triangle, though tiny, conducts a ferocious interrogation.",
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
       ]
     }
   ]
