@@ -1,3 +1,3 @@
 export default {
-  spacing: 20,
+  spacing: 40,
 }

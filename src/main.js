@@ -91,7 +91,7 @@ const data = {
             },
           ],
           description: [
-            "Excessive steeping has instigated the mottling. It began slowly but is picking up speed now. Soon it will be time to rest forever.",
+            "Sustained trauma steeping has triggered the mottling. It began slowly but is picking up speed now. Soon it will be time to rest forever.",
             "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -134,7 +134,7 @@ const data = {
           ]
         },
         {
-          name: "Cannot Be Unseen",
+          name: "No Unsee",
           slug: "cannot-be-unseen",
           price: 250,
           sold: false,
@@ -148,7 +148,7 @@ const data = {
             },
           ],
           description: [
-            "As she unburdened herself of the imagery and a deep haunting took hold immediately.",
+            "She unburdened herself of the imagery and a deep haunting took hold immediately.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -167,9 +167,123 @@ const data = {
             },
           ],
           description: [
+            "Do they know?",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
-        }
+        },
+        {
+          name: "Crispin's Knoblets",
+          slug: "crispins-knoblets",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386886450/crispins-knoblets",
+          images: [
+            {
+              name: "full",
+              url: "img/crispins-knoblets.jpg",
+              width: 3900,
+              height: 5256,
+            },
+          ],
+          description: [
+            "Riding the vanguard of knoblet flavoring.",
+            "A 7.1\" x 9.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Deregistered Heart",
+          slug: "deregistered-heart",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386886450/deregistered-heart",
+          images: [
+            {
+              name: "full",
+              url: "img/deregistered-heart.jpg",
+              width: 3300,
+              height: 4469,
+            },
+          ],
+          description: [
+            "It's upside down. It's external. It's a deregistered.",
+            "A 7.2\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Dissapointment Skorba",
+          slug: "dissapointment-skorba",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386886450/dissapointment-skorba",
+          images: [
+            {
+              name: "full",
+              url: "img/dissapointment-skorba.jpg",
+              width: 3600,
+              height: 4808,
+            },
+          ],
+          description: [
+            "It was not shaped as she had expected.",
+            "A 7.2\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Dombrex Arising",
+          slug: "dombrex-arising",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386886450/dombrex-arising",
+          images: [
+            {
+              name: "full",
+              url: "img/dombrex-arising.jpg",
+              width: 3400,
+              height: 4579,
+            },
+          ],
+          description: [
+            "He pushes through the foam and his teary eye sees light for the first time.",
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "TBD",
+          slug: "tbd-1",
+          price: 250,
+          sold: false,
+          shopURL: "#tbd-1",
+          images: [
+            {
+              name: "full",
+              url: "img/dongle-suspension-with-freshness-nodes.jpg",
+              width: 2000,
+              height: 2651,
+            },
+          ],
+          description: [
+            "",
+          ]
+        },
+        {
+          name: "Energy Mustache Goblet",
+          slug: "energy-mustache-goblet",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400377945/energy-mustache-goblet",
+          images: [
+            {
+              name: "full",
+              url: "img/energy-mustache-goblet.jpg",
+              width: 3600,
+              height: 4732,
+            },
+          ],
+          description: [
+            "Forget gelfling essence; a few sips from the energy mustache goblet and you'll be flailing your limbs in spasmodic abandon.",
+            "A 8.1\" x 10.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
       ]
     }
   ]

@@ -1,6 +1,7 @@
 import React from "react"
 import TopScrolly from "./TopScrolly"
 import SketchbookUnit from "./SketchbookUnit"
+import C from "../constants"
 
 export default class App extends React.Component {
 
@@ -11,19 +12,22 @@ export default class App extends React.Component {
   render () {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
-    const spacing = 40
+    // const spacing = 40
     return (
       <div style={{
-        padding: spacing / 2,
-        width: `calc(100% - ${spacing}px)`,
-        maxWidth: 800
+        marginTop: C.spacing,
+        width: "100%",
+        // width: `calc(100% - ${C.spacing}px)`,
+        // textAlign: "center", // doesn't really work, why?
       }}>
         <div // nav
           style={{
+            paddingLeft: C.spacing / 2,
+            paddingRight: C.spacing / 2,
             position: "relative",
             width: 80,
             height: 80,
-            marginBottom: spacing,
+            marginBottom: C.spacing,
             // borderStyle: "solid",
             // borderWidth: 1,
             // borderRadius: 4,
@@ -34,9 +38,13 @@ export default class App extends React.Component {
         </div>
         <h1
           style={{
-            marginBottom: spacing,
+            paddingLeft: C.spacing / 2,
+            paddingRight: C.spacing / 2,
+            marginBottom: C.spacing,
           }}
-        >{projectName}</h1>
+        >
+          {projectName}
+        </h1>
         {units.map((data, index) => {
           return (
             <SketchbookUnit
