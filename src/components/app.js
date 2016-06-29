@@ -17,6 +17,7 @@ export default class App extends React.Component {
       <div style={{
         marginTop: C.spacing,
         width: "100%",
+        maxWidth: "1000",
         // width: `calc(100% - ${C.spacing}px)`,
         // textAlign: "center", // doesn't really work, why?
       }}>

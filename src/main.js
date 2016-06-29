@@ -328,7 +328,7 @@ const data = {
           slug: "prembus-bulbeeny",
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/listing/400514201/prembus-bulbeeny",
+          shopURL: "#prembus-bulbeeny",
           images: [
             {
               name: "full",
