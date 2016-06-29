@@ -4,6 +4,13 @@ import C from "../constants"
 
 export default class SketchbookUnit extends React.Component {
 
+  constructor(props) {
+    super(props)
+    window.addEventListener("scroll", () => {
+
+    })
+  }
+
   render () {
     // const {screenWidth, screenHeight} = this.state
     const {data} = this.props
@@ -16,6 +23,7 @@ export default class SketchbookUnit extends React.Component {
         src={imageURL}
         width="100%"
         height="auto"
+        maxHeight="100%"
       />
     )
 
