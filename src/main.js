@@ -318,9 +318,101 @@ const data = {
             },
           ],
           description: [
-            "The enthusiasm is palpable. Ready sir, yes. Been ready all my life. Proud and smelly. Crisp and fetid. Garbage cream dollop against regal boxy stripes.",
+            "The enthusiasm is palpable. Ready sir, yes! Been ready all my life. Proud and smelly. Crisp and fetid. Garbage cream dollop against regal boxy stripes.",
             "The power triangle, though tiny, conducts a ferocious interrogation.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Prembus Bulbeeny",
+          slug: "prembus-bulbeeny",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400514201/prembus-bulbeeny",
+          images: [
+            {
+              name: "full",
+              url: "img/prembus-bulbeeny.jpg",
+              width: 2000,
+              height: 2646,
+            },
+          ],
+          description: [
+            "TODO: - re-export image - write description - post on shop",
+          ]
+        },
+        {
+          name: "Race you to Single Point Consciousness",
+          slug: "race-you-to-single-point-consciousness",
+          price: 250,
+          sold: false,
+          shopURL: "#race-you-to-single-point-consciousness",
+          images: [
+            {
+              name: "full",
+              url: "img/race-you-to-single-point-consciousness.jpg",
+              width: 3600,
+              height: 5560,
+            },
+          ],
+          description: [
+            "TODO: - write description - post on shop",
+          ]
+        },
+        {
+          name: "Shards in Energon Soup",
+          slug: "shards-in-energon-soup",
+          price: 250,
+          sold: false,
+          shopURL: "#shards-in-energon-soup",
+          images: [
+            {
+              name: "full",
+              url: "img/shards-in-energon-soup.jpg",
+              width: 2000,
+              height: 2653,
+            },
+          ],
+          description: [
+            "TODO: - re-export image - write description - post on shop",
+          ]
+        },
+        {
+          name: "Shared Hair",
+          slug: "shared-hair",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
+          images: [
+            {
+              name: "full",
+              url: "img/shared-hair.jpg",
+              width: 3000,
+              height: 4537,
+            },
+          ],
+          description: [
+            "Conjoined energy hair.",
+            "A 7.5\" x 11.3\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "West Meadow Beak Horn",
+          slug: "west-meadow-beak-horn",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386895490/west-meadow-beak-horn",
+          images: [
+            {
+              name: "full",
+              url: "img/west-meadow-beak-horn.jpg",
+              width: 3200,
+              height: 4348,
+            },
+          ],
+          description: [
+            "In the West Meadow sentient cutaneous horns can sometimes be found, sprouting from the turf. They can provide answers if you ask the right questions.",
+            "A 7.1\" x 9.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
       ]
