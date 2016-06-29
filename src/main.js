@@ -22,7 +22,8 @@ const data = {
             },
             {
               name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"            },
+              url: "img/dark-lord-grocery-delivery-d1.jpg"       
+            },
             {
               name: "detail 2",
               url: "img/dark-lord-grocery-delivery-d2.jpg"
@@ -50,18 +51,6 @@ const data = {
               width: 3200,
               height: 4949,
             },
-            {
-              name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"
-            },
-            {
-              name: "detail 2",
-              url: "img/dark-lord-grocery-delivery-d2.jpg"
-            },
-            {
-              name: "detail 3",
-              url: "img/dark-lord-grocery-delivery-d3.jpg"
-            },
           ],
           description: [
             "The array of moments doesn't start with your birth or end with your death.",
@@ -81,22 +70,104 @@ const data = {
               width: 3500,
               height: 4988,
             },
-            {
-              name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"
-            },
-            {
-              name: "detail 2",
-              url: "img/dark-lord-grocery-delivery-d2.jpg"
-            },
-            {
-              name: "detail 3",
-              url: "img/dark-lord-grocery-delivery-d3.jpg"
-            },
           ],
           description: [
             "Sitting and waiting patiently with burly, well developed antennae. Several intersection pockets are drifting through.",
             "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Brenzored Trabient",
+          slug: "brenzored-trabient",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400394365/brenzored-trabient",
+          images: [
+            {
+              name: "full",
+              url: "img/brenzored-trabient.jpg",
+              width: 3000,
+              height: 4595,
+            },
+          ],
+          description: [
+            "Excessive steeping has instigated the mottling. It began slowly but is picking up speed now. Soon it will be time to rest forever.",
+            "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Brumbic Formiculum",
+          slug: "brenzored-trabient",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
+          images: [
+            {
+              name: "full",
+              url: "img/brumbic-formiculum.jpg",
+              width: 3000,
+              height: 3969,
+            },
+          ],
+          description: [
+            "Velvety curvaceous verticals in a gentle s-curve soup. Dense packets of roughshod spuckings attract larger aerated gundies.",
+            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Canadian Cyclops",
+          slug: "canadian-cyclops",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400371433/canadian-cyclops",
+          images: [
+            {
+              name: "full",
+              url: "img/canadian-cyclops.jpg",
+              width: 3500,
+              height: 4809,
+            },
+          ],
+          description: [
+            "Fueled almost entirely by maple syrup and Molson Ex, he ranges through the great pines of the Canadian shield waiting for the age of man to conclude.",
+            "A 7\" x 9\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Cannot Be Unseen",
+          slug: "cannot-be-unseen",
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400389011/cannot-be-unseen",
+          images: [
+            {
+              name: "full",
+              url: "img/cannot-be-unseen.jpg",
+              width: 3500,
+              height: 4809,
+            },
+          ],
+          description: [
+            "As she unburdened herself of the imagery and a deep haunting took hold immediately.",
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Convergent Suspicion Vortex",
+          slug: "convergent-suspicion-vortex",
+          price: 250,
+          sold: true,
+          shopURL: "#convergent-suspicion-vortex",
+          images: [
+            {
+              name: "full",
+              url: "img/convergent-suspicion-vortex.jpg",
+              width: 2000,
+              height: 2744,
+            },
+          ],
+          description: [
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         }
       ]

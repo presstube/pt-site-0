@@ -14,9 +14,9 @@ export default class App extends React.Component {
     const spacing = 40
     return (
       <div style={{
-        padding: spacing,
-        width: `calc(100% - ${spacing * 2}px)`,
-        maxWidth: 1000
+        padding: spacing / 2,
+        width: `calc(100% - ${spacing}px)`,
+        maxWidth: 800
       }}>
         <div // nav
           style={{
