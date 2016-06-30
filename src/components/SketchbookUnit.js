@@ -53,9 +53,9 @@ export default class SketchbookUnit extends React.Component {
     const {data} = this.props
     const {name, slug, price, sold, shopURL, images, description} = data
     const image = _.first(images)
-    const {url: imageURL, width, height} = image
-    const widthMult = window.innerWidth/width
-    const dpr = window.devicePixelRatio
+    const {url: imageURL/*, width, height*/} = image
+    // const widthMult = window.innerWidth/width
+    // const dpr = window.devicePixelRatio
 
     const imageEl = (
       <div

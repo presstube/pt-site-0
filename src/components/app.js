@@ -9,15 +9,32 @@ export default class App extends React.Component {
     super(props)
   }
 
+  state = {
+    maxWidth: 900
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", () => {
+      this.onResize()
+    })
+    this.onResize()
+  }
+
+  onResize() {
+    this.setState({maxWidth: 900 / window.devicePixelRatio})
+  }
+
   render () {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
+    const {maxWidth} = this.state
     // const spacing = 40
     return (
       <div style={{
         marginTop: C.spacing,
+        // width: "100%",
         width: "100%",
-        maxWidth: 900,
+        maxWidth,
         // width: `calc(100% - ${C.spacing}px)`,
         // textAlign: "center", // doesn't really work, why?
       }}>

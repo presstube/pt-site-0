@@ -205,7 +205,7 @@ const data = {
             },
           ],
           description: [
-            "It's upside down. It's external. It's a deregistered.",
+            "It's upside down. It's external. It's deregistered.",
             "A 7.2\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
