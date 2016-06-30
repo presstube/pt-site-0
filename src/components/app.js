@@ -10,12 +10,20 @@ export default class App extends React.Component {
   }
 
   state = {
-    maxWidth: 900
+    maxWidth: 900,
+    brandAnimationCompleted: false,
   }
 
   componentDidMount() {
     window.addEventListener("resize", this.onResize)
     this.onResize()
+  }
+
+  ctrl = {
+    onBrandAnimationComplete: () => {
+      console.log("brand animation complete")
+      this.setState({brandAnimationCompleted: true})
+    }
   }
 
   onResize() {
@@ -25,13 +33,13 @@ export default class App extends React.Component {
   render () {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
-    const {maxWidth} = this.state
+    const {maxWidth, brandAnimationCompleted} = this.state
     return (
       <div
         style={{
           position: "relative",
           width: "100%",
-          textAlign: "center",
+          textAlign: "left",
         }}
       >
         <div style={{
@@ -53,25 +61,30 @@ export default class App extends React.Component {
               marginBottom: C.spacing,
             }}
           >
-            <TopScrolly name="brand"/>
+            <TopScrolly name="brand" ctrl={this.ctrl}/>
           </div>
-          <h1
-            style={{
-              paddingLeft: C.spacing / 2,
-              paddingRight: C.spacing / 2,
-              marginBottom: C.spacing,
-            }}
-          >
-            {projectName}
-          </h1>
-          {units.map((data, index) => {
-            return (
-              <SketchbookUnit
-                key={index}
-                data={data}
-              />
-            )
-          })}
+          {brandAnimationCompleted ?
+            <div>
+              <h1
+                style={{
+                  paddingLeft: C.spacing / 2,
+                  paddingRight: C.spacing / 2,
+                  marginBottom: C.spacing,
+                }}
+              >
+                {projectName}
+              </h1>
+              {
+                units.map((data, index) => {
+                  return (
+                    <SketchbookUnit
+                      key={index}
+                      data={data}
+                    />
+                  )
+                })
+              }
+            </div> : null}
         </div>
       </div>
     )

@@ -4,6 +4,7 @@ import React from "react"
 export default class TopScrolly extends React.Component {
 
   static propTypes = {
+    ctrl: React.PropTypes.object.isRequired,
     name: React.PropTypes.string.isRequired,
     maxWidth: React.PropTypes.number
   }
@@ -16,6 +17,7 @@ export default class TopScrolly extends React.Component {
     const {name} = props
     super(props)
     this.loadLib(`${name}.js`)
+    console.log("ctrl: ", this.props.ctrl)
   }
 
   state = {
@@ -28,7 +30,8 @@ export default class TopScrolly extends React.Component {
     sw: 0,
     sh: 0,
     dpr: 1,
-    shrinkScale: 1
+    shrinkScale: 1,
+    completed: false
   }
 
   loadLib(filename) {
@@ -45,6 +48,7 @@ export default class TopScrolly extends React.Component {
     const {fps} = libProps
     const root = new lib[name]
     const {main} = root
+    console.log("main: ", main)
     const stage = new createjs.Stage(this.canvas)
     this.setState({stage, main, libProps}, () => {
       stage.addChild(root)
@@ -61,7 +65,16 @@ export default class TopScrolly extends React.Component {
   onMainTick() {
     const {main} = this.state
     const {currentFrame, totalFrames} = main
-    if (currentFrame === totalFrames - 1) main.stop()
+    if (currentFrame === totalFrames - 1) {
+      if (!main.paused) {
+        main.stop()
+      }
+      if (!this.state.completed) {
+        this.setState({completed: true}, () => {
+          this.props.ctrl.onBrandAnimationComplete()
+        })
+      }
+    }
   }
 
   onScroll() {
