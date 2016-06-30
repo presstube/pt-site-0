@@ -6,46 +6,46 @@ export default class SketchbookUnit extends React.Component {
 
   constructor(props) {
     super(props)
-    window.addEventListener("scroll", () => {
-      console.log("scroll")
-      this.checkCull()
-      // perform cull update
-    })
-    window.addEventListener("resize", () => {
-      console.log("resize")
-      // this.calcRect()
-      // store getBoundingClientRect()
-      this.checkCull()
-    })
+    // window.addEventListener("scroll", () => {
+    //   console.log("scroll")
+    //   this.checkCull()
+    //   // perform cull update
+    // })
+    // window.addEventListener("resize", () => {
+    //   console.log("resize")
+    //   // this.calcRect()
+    //   // store getBoundingClientRect()
+    //   this.checkCull()
+    // })
   }
 
   state = {
-    active: false,
+    active: true,
     rect: null
   }
 
   componentDidMount() {
     // this.calcRect()
-    this.checkCull()
+    // this.checkCull()
   }
 
   // calcRect() {
   //   this.rect = this.node.getBoundingClientRect()
   // }
 
-  checkCull() {
-    this.rect = this.node.getBoundingClientRect()
-    const {top, bottom} = this.rect
-    const {innerHeight} = window
-    // console.log(this.props.data.name)
-    if ((top >= 0 && top <= innerHeight) ||
-        (bottom >= 0 && bottom <= innerHeight) ||
-        (top < 0 && bottom > innerHeight)) {
-      this.setState({active: true})
-    } else {
-      this.setState({active: false})
-    }
-  }
+  // checkCull() {
+  //   this.rect = this.node.getBoundingClientRect()
+  //   const {top, bottom} = this.rect
+  //   const {innerHeight} = window
+  //   // console.log(this.props.data.name)
+  //   if ((top >= 0 && top <= innerHeight) ||
+  //       (bottom >= 0 && bottom <= innerHeight) ||
+  //       (top < 0 && bottom > innerHeight)) {
+  //     this.setState({active: true})
+  //   } else {
+  //     this.setState({active: false})
+  //   }
+  // }
 
   render () {
     // const {screenWidth, screenHeight} = this.state
@@ -55,29 +55,29 @@ export default class SketchbookUnit extends React.Component {
     const image = _.first(images)
     const {url: imageURL, width, height} = image
     const widthMult = window.innerWidth/width
+    const dpr = window.devicePixelRatio
 
     const imageEl = (
       <div
-        style={{
-          // // width: `calc(100% - ${width})`,
-          // // height: `calc(100% - ${width})`,
-          // // width: `calc(${width}px * calc(${width}px / 100%)px)`,
-          // // height: `calc(${height}px * calc(${width}px / 100%)px)`,
-          // width: width * widthMult,
-          // height: height * widthMult,
-          // // height: `calc(${height}px * calc(${width}px / 100%)px)`, 
-          // backgroundColor: "grey",
-        }}
+        // style={{
+        //   // width: `calc(100% - ${width})`,
+        //   // height: `calc(100% - ${width})`,
+        //   // width: `calc(${width}px * calc(${width}px / 100%)px)`,
+        //   // height: `calc(${height}px * calc(${width}px / 100%)px)`,
+        //   width: (width * widthMult) * dpr,
+        //   height: (height * widthMult) * dpr,
+        //   // height: `calc(${height}px * calc(${width}px / 100%)px)`,
+        //   backgroundColor: "grey",
+        // }}
       >
-
-      {active ?
-        <img
-          src={imageURL}
-          width="100%"
-          height="auto"
-          // maxHeight="100%"
-        /> : null
-      }
+        {active ?
+          <img
+            src={imageURL}
+            width="100%"
+            height="auto"
+            // maxHeight="100%"
+          /> : null
+        }
       </div>
     )
 
