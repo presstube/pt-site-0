@@ -19,21 +19,6 @@ export default class SketchbookUnit extends React.Component {
     const image = _.first(images)
     const {url: imageURL} = image
 
-    const imageEl = (
-      <div
-        style={{
-        }}
-      >
-        {active ?
-          <img
-            src={imageURL}
-            width="100%"
-            height="auto"
-          /> : null
-        }
-      </div>
-    )
-
     return (
       <div
         id={slug}
@@ -42,7 +27,11 @@ export default class SketchbookUnit extends React.Component {
           marginBottom: "20%"
         }}
       >
-        {imageEl}
+        <img
+          src={imageURL}
+          width="100%"
+          height="auto"
+        />
         <div
           style={{
             paddingLeft: C.spacing / 2,
@@ -53,9 +42,7 @@ export default class SketchbookUnit extends React.Component {
           <h2>{name}</h2>
           {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
           <h3>
-            <a
-              href={shopURL}
-            >
+            <a href={shopURL}>
               {sold ? "SOLD" : `BUY: $${price}`}
             </a>
           </h3>

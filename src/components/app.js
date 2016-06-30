@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.onResize)
+    window.addEventListener("resize", this.onResize.bind(this))
     this.onResize()
   }
 
@@ -35,58 +35,67 @@ export default class App extends React.Component {
     const {name: projectName, units} = projectData
     const {maxWidth, brandAnimationCompleted} = this.state
     return (
-      <div
-        style={{
-          position: "relative",
-          width: "100%",
-          textAlign: "left",
-        }}
-      >
-        <div style={{
-          display: "inline-block",
-          position: "relative",
-          marginTop: C.spacing,
-          width: "100%",
-          // maxWidth,
-          maxWidth: 900,
-          textAlign: "left",
-        }}>
-          <div // nav
+      <div style={{
+        position: "relative",
+        marginTop: C.spacing,
+        width: "100%",
+        maxWidth: 900,
+        minHeight: window.innerHeight,
+        textAlign: "left",
+        margin: "auto",
+      }}>
+        <div // nav
+          style={{
+            paddingLeft: C.spacing / 2,
+            paddingRight: C.spacing / 2,
+            paddingTop: C.spacing,
+            position: "relative",
+            width: 80,
+            height: 80,
+            marginBottom: C.spacing,
+          }}
+        >
+          <TopScrolly name="brand" ctrl={this.ctrl}/>
+        </div>
+        {brandAnimationCompleted ?
+          <div
             style={{
-              paddingLeft: C.spacing / 2,
-              paddingRight: C.spacing / 2,
-              position: "relative",
-              width: 80,
-              height: 80,
-              marginBottom: C.spacing,
+              // width: "100%"
             }}
           >
-            <TopScrolly name="brand" ctrl={this.ctrl}/>
-          </div>
-          {brandAnimationCompleted ?
-            <div>
-              <h1
-                style={{
-                  paddingLeft: C.spacing / 2,
-                  paddingRight: C.spacing / 2,
-                  marginBottom: C.spacing,
-                }}
-              >
-                {projectName}
-              </h1>
-              {
-                units.map((data, index) => {
-                  return (
-                    <SketchbookUnit
-                      key={index}
-                      data={data}
-                    />
-                  )
-                })
-              }
-            </div> : null}
-        </div>
+            <h1
+              style={{
+                paddingLeft: C.spacing / 2,
+                paddingRight: C.spacing / 2,
+                marginTop: C.spacing,
+                marginBottom: C.spacing,
+              }}
+            >
+              {projectName}
+            </h1>
+            {
+              units.map((data, index) => {
+                return (
+                  <SketchbookUnit
+                    key={index}
+                    data={data}
+                  />
+                )
+              })
+            }
+
+          </div> : null}
       </div>
     )
   }
 }
+
+
+
+/*
+            <img
+              src="img/bashful-fringe.jpg"
+              width="100%"
+            />
+
+*/

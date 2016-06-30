@@ -2,7 +2,7 @@
      <symbols>
           <Include href="bg.xml" loadImmediate="false" itemID="577419bb-0000000b" lastModified="1467226556"/>
           <Include href="dot.xml" loadImmediate="false" itemID="57450826-0000008a" lastModified="1464634427"/>
-          <Include href="main.xml" loadImmediate="false" itemID="5751cf38-00000018" lastModified="1467310396"/>
+          <Include href="main.xml" loadImmediate="false" itemID="5751cf38-00000018" lastModified="1467318383"/>
           <Include href="p1.xml" loadImmediate="false" itemID="5744fe14-00000007" lastModified="1465317539"/>
           <Include href="p2.xml" loadImmediate="false" itemID="5744ff44-00000021" lastModified="1465317546"/>
           <Include href="p3.xml" loadImmediate="false" itemID="574500d3-00000053" lastModified="1465317550"/>
