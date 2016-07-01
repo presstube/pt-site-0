@@ -35,7 +35,7 @@ export default class App extends React.Component {
     const ratio = innerWidth / innerHeight
     console.log("ratio: ", ratio)
     // if (innerWidth < innerHeight) {
-    if (ratio <= 0.75) {
+    if (ratio <= 0.8) {
       // portrait
       return "100%"
     } else {
