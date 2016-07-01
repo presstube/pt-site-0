@@ -11,8 +11,8 @@ export default class App extends React.Component {
   }
 
   state = {
-    maxWidth: 900,
-    brandAnimationCompleted: false,
+    maxWidth: this.getMaxWidth(),
+    brandAnimationCompleted: true,
   }
 
   componentDidMount() {
@@ -22,13 +22,30 @@ export default class App extends React.Component {
 
   ctrl = {
     onBrandAnimationComplete: () => {
-      console.log("brand animation complete")
       this.setState({brandAnimationCompleted: true})
     }
   }
 
   onResize() {
-    this.setState({maxWidth: 900 / window.devicePixelRatio})
+    this.setState({maxWidth: this.getMaxWidth()})
+  }
+
+  getMaxWidth() {
+    const {innerWidth, innerHeight} = window
+    const ratio = innerWidth / innerHeight
+    console.log("ratio: ", ratio)
+    // if (innerWidth < innerHeight) {
+    if (ratio <= 0.75) {
+      // portrait
+      return "100%"
+    } else {
+      // landscape
+      return innerWidth >= 500 ? 500 : "100%"
+    }
+
+
+    // return innerWidth >= 768 ? 768 : "100%"
+
   }
 
   render () {
@@ -36,13 +53,12 @@ export default class App extends React.Component {
     const {name: projectName, units} = projectData
     const {maxWidth, brandAnimationCompleted} = this.state
     const activeUnits = _.filter(units, {active:true})
-    console.log("activeUnits: ", activeUnits)
     return (
       <div style={{
         position: "relative",
         marginTop: C.spacing,
         width: "100%",
-        maxWidth: 900,
+        maxWidth: maxWidth,
         minHeight: window.innerHeight,
         textAlign: "left",
         margin: "auto",

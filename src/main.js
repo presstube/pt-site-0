@@ -8,11 +8,74 @@ const data = {
       name: "Sketchbook",
       units: [
         {
+          name: "West Meadow Beak Horn",
+          slug: "west-meadow-beak-horn",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386895490/west-meadow-beak-horn",
+          images: [
+            {
+              name: "full",
+              url: "img/west-meadow-beak-horn.jpg",
+              width: 3200,
+              height: 4348,
+            },
+          ],
+          description: [
+            "In the west meadow sentient cutaneous horns can sometimes be found sprouting from the turf. They can provide answers if you know the right questions.",
+            "A 7.1\" x 9.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
+        {
+          name: "Bashful Fringe",
+          slug: "bashful-fringe",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/386818902/bashful-fringe",
+          images: [
+            {
+              name: "full",
+              url: "img/bashful-fringe.jpg",
+              width: 3500,
+              height: 4988,
+            },
+          ],
+          description: [
+            "Sitting and waiting patiently with burly, well developed antennae. Several intersection pockets are drifting through.",
+            "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
+        {
+          name: "Brenzored Trabient",
+          slug: "brenzored-trabient",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400394365/brenzored-trabient",
+          images: [
+            {
+              name: "full",
+              url: "img/brenzored-trabient.jpg",
+              width: 3000,
+              height: 4595,
+            },
+          ],
+          description: [
+            "Sustained trauma steeping has triggered the mottling. It began slowly but is picking up speed now. Soon it will be time to rest forever.",
+            "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
+        {
           name: "Dark Lord Grocery Delivery",
           slug: "dark-lord-grocery-delivery",
           active: true,
           price: 250,
-          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery?ref=shop_home_active_1",
+          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery",
           sold: true,
           images: [
             {
@@ -39,6 +102,7 @@ const data = {
             "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
+
         {
           name: "Array of Moments",
           slug: "array-of-moments",
@@ -60,86 +124,6 @@ const data = {
           ]
         },
         {
-          name: "Bashful Fringe",
-          slug: "bashful-fringe",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/386818902/bashful-fringe",
-          images: [
-            {
-              name: "full",
-              url: "img/bashful-fringe.jpg",
-              width: 3500,
-              height: 4988,
-            },
-          ],
-          description: [
-            "Sitting and waiting patiently with burly, well developed antennae. Several intersection pockets are drifting through.",
-            "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-        {
-          name: "Brenzored Trabient",
-          slug: "brenzored-trabient",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400394365/brenzored-trabient",
-          images: [
-            {
-              name: "full",
-              url: "img/brenzored-trabient.jpg",
-              width: 3000,
-              height: 4595,
-            },
-          ],
-          description: [
-            "Sustained trauma steeping has triggered the mottling. It began slowly but is picking up speed now. Soon it will be time to rest forever.",
-            "A 8.1\" x 11.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-        {
-          name: "Brumbic Formiculum",
-          slug: "brenzored-trabient",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
-          images: [
-            {
-              name: "full",
-              url: "img/brumbic-formiculum.jpg",
-              width: 3000,
-              height: 3969,
-            },
-          ],
-          description: [
-            "Velvety curvaceous verticals in a gentle s-curve soup. Dense packets of roughshod spuckings attract larger aerated gundies.",
-            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-        {
-          name: "Canadian Cyclops",
-          slug: "canadian-cyclops",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400371433/canadian-cyclops",
-          images: [
-            {
-              name: "full",
-              url: "img/canadian-cyclops.jpg",
-              width: 3500,
-              height: 4809,
-            },
-          ],
-          description: [
-            "Fueled almost entirely by maple syrup and Molson Ex, he ranges through the great pines of the Canadian shield waiting for the age of man to conclude.",
-            "A 7\" x 9\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-        {
           name: "No Unsee",
           slug: "cannot-be-unseen",
           active: true,
@@ -155,7 +139,7 @@ const data = {
             },
           ],
           description: [
-            "She unburdened herself of the imagery and a deep haunting took hold.",
+            "As she unburdened herself it became clear that the image would haunt his dreams for all eternity.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -205,7 +189,7 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/listing/386886450/deregistered-heart",
+          shopURL: "https://www.etsy.com/listing/387015402/deregistered-heart",
           images: [
             {
               name: "full",
@@ -225,7 +209,7 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/listing/386886450/dissapointment-skorba",
+          shopURL: "https://www.etsy.com/listing/400390793/disappointment-skorba",
           images: [
             {
               name: "full",
@@ -235,7 +219,7 @@ const data = {
             },
           ],
           description: [
-            "It was not shaped as she had expected.",
+            "As it grew her mouthings craggled downward. It was not shaped as she had expected.",
             "A 7.2\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -245,7 +229,7 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/listing/386886450/dombrex-arising",
+          shopURL: "https://www.etsy.com/listing/400385781/dombrex-arising",
           images: [
             {
               name: "full",
@@ -255,10 +239,32 @@ const data = {
             },
           ],
           description: [
-            "He pushes through the foam and his teary eye sees light for the first time.",
+            "The mantle froth reached a fever pitch and it was time for the dombrex to emerge. As he pushed his primary shaft up through the foam his teary eye saw light for the first time in millenia.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
+
+        {
+          name: "Canadian Cyclops",
+          slug: "canadian-cyclops",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400371433/canadian-cyclops",
+          images: [
+            {
+              name: "full",
+              url: "img/canadian-cyclops.jpg",
+              width: 3500,
+              height: 4809,
+            },
+          ],
+          description: [
+            "Fueled almost entirely by maple syrup and Molson Ex, he ranges through the great pines of the Canadian shield waiting for the age of man to conclude.",
+            "A 7\" x 9\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
         {
           name: "TBD",
           slug: "tbd-1",
@@ -294,7 +300,7 @@ const data = {
             },
           ],
           description: [
-            "Forget gelfling essence; a few sips from the energy mustache goblet and you'll be flailing your limbs in spasmodic abandon.",
+            "Forget gelfling essence, a few sips from the energy mustache goblet and you'll be singing the hymns of Tuntimus Prime and flailing your limbs in spasmodic abandon.",
             "A 8.1\" x 10.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -314,7 +320,7 @@ const data = {
             },
           ],
           description: [
-            "The inspector's quivering mouth barrel can sense that you are lying. Before him you cannot hide.",
+            "The inspector's quivering mouth barrel can sense that you are lying. He detects vibrations being shucked from your nervous frame. Before him you cannot hide.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
@@ -339,6 +345,49 @@ const data = {
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
+
+        {
+          name: "Brumbic Formiculum",
+          slug: "brenzored-trabient",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
+          images: [
+            {
+              name: "full",
+              url: "img/brumbic-formiculum.jpg",
+              width: 3000,
+              height: 3969,
+            },
+          ],
+          description: [
+            "Velvety curvaceous verticals in a gentle s-curve soup. Dense packets of roughshod spuckings attract larger aerated gundies.",
+            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Petri series.",
+          ]
+        },
+
+        {
+          name: "Shared Hair",
+          slug: "shared-hair",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
+          images: [
+            {
+              name: "full",
+              url: "img/shared-hair.jpg",
+              width: 3000,
+              height: 4537,
+            },
+          ],
+          description: [
+            "A formidable pair boasting conjoined energy hair.",
+            "A 7.5\" x 11.3\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
         {
           name: "Prembus Bulbeeny",
           slug: "prembus-bulbeeny",
@@ -396,50 +445,11 @@ const data = {
             "TODO: - re-export image - write description - post on shop",
           ]
         },
-        {
-          name: "Shared Hair",
-          slug: "shared-hair",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
-          images: [
-            {
-              name: "full",
-              url: "img/shared-hair.jpg",
-              width: 3000,
-              height: 4537,
-            },
-          ],
-          description: [
-            "Conjoined energy hair.",
-            "A 7.5\" x 11.3\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-        {
-          name: "West Meadow Beak Horn",
-          slug: "west-meadow-beak-horn",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/386895490/west-meadow-beak-horn",
-          images: [
-            {
-              name: "full",
-              url: "img/west-meadow-beak-horn.jpg",
-              width: 3200,
-              height: 4348,
-            },
-          ],
-          description: [
-            "In the West Meadow sentient cutaneous horns can sometimes be found, sprouting from the turf. They can provide answers if you ask the right questions.",
-            "A 7.1\" x 9.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
+
         {
           name: "Choblet Mound Trifectus",
           slug: "choblet-mound-trifecta",
-          active: true,
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#choblet-mound-trifecta",

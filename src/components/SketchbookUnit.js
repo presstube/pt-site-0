@@ -42,7 +42,10 @@ export default class SketchbookUnit extends React.Component {
           <h2>{name}</h2>
           {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
           <h3>
-            <a href={shopURL}>
+            <a
+              href={shopURL}
+              // target="_blank"
+            >
               {sold ? "SOLD" : `BUY: $${price}`}
             </a>
           </h3>
