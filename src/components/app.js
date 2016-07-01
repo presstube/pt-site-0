@@ -1,3 +1,4 @@
+import _ from "lodash"
 import React from "react"
 import TopScrolly from "./TopScrolly"
 import SketchbookUnit from "./SketchbookUnit"
@@ -34,6 +35,8 @@ export default class App extends React.Component {
     const projectData = this.props.data.projects[0]
     const {name: projectName, units} = projectData
     const {maxWidth, brandAnimationCompleted} = this.state
+    const activeUnits = _.filter(units, {active:true})
+    console.log("activeUnits: ", activeUnits)
     return (
       <div style={{
         position: "relative",
@@ -74,7 +77,7 @@ export default class App extends React.Component {
               {projectName}
             </h1>
             {
-              units.map((data, index) => {
+              activeUnits.map((data, index) => {
                 return (
                   <SketchbookUnit
                     key={index}

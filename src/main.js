@@ -10,6 +10,7 @@ const data = {
         {
           name: "Dark Lord Grocery Delivery",
           slug: "dark-lord-grocery-delivery",
+          active: true,
           price: 250,
           shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery?ref=shop_home_active_1",
           sold: true,
@@ -41,6 +42,7 @@ const data = {
         {
           name: "Array of Moments",
           slug: "array-of-moments",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/ca/listing/400297521/array-of-moments",
@@ -60,6 +62,7 @@ const data = {
         {
           name: "Bashful Fringe",
           slug: "bashful-fringe",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386818902/bashful-fringe",
@@ -79,6 +82,7 @@ const data = {
         {
           name: "Brenzored Trabient",
           slug: "brenzored-trabient",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400394365/brenzored-trabient",
@@ -98,6 +102,7 @@ const data = {
         {
           name: "Brumbic Formiculum",
           slug: "brenzored-trabient",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
@@ -117,6 +122,7 @@ const data = {
         {
           name: "Canadian Cyclops",
           slug: "canadian-cyclops",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400371433/canadian-cyclops",
@@ -136,6 +142,7 @@ const data = {
         {
           name: "No Unsee",
           slug: "cannot-be-unseen",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400389011/cannot-be-unseen",
@@ -148,13 +155,14 @@ const data = {
             },
           ],
           description: [
-            "She unburdened herself of the imagery and a deep haunting took hold immediately.",
+            "She unburdened herself of the imagery and a deep haunting took hold.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
         {
           name: "Convergent Suspicion Vortex",
           slug: "convergent-suspicion-vortex",
+          active: true,
           price: 250,
           sold: true,
           shopURL: "#convergent-suspicion-vortex",
@@ -174,6 +182,7 @@ const data = {
         {
           name: "Crispin's Knoblets",
           slug: "crispins-knoblets",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386886450/crispins-knoblets",
@@ -193,6 +202,7 @@ const data = {
         {
           name: "Deregistered Heart",
           slug: "deregistered-heart",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386886450/deregistered-heart",
@@ -212,6 +222,7 @@ const data = {
         {
           name: "Dissapointment Skorba",
           slug: "dissapointment-skorba",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386886450/dissapointment-skorba",
@@ -231,6 +242,7 @@ const data = {
         {
           name: "Dombrex Arising",
           slug: "dombrex-arising",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386886450/dombrex-arising",
@@ -250,6 +262,7 @@ const data = {
         {
           name: "TBD",
           slug: "tbd-1",
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#tbd-1",
@@ -268,6 +281,7 @@ const data = {
         {
           name: "Energy Mustache Goblet",
           slug: "energy-mustache-goblet",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400377945/energy-mustache-goblet",
@@ -287,6 +301,7 @@ const data = {
         {
           name: "Forensic Stalk Inspector",
           slug: "forensic-stalk-inspector",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400386893/forensic-stalk-inspector",
@@ -306,6 +321,7 @@ const data = {
         {
           name: "Garbage Cream Job Interview",
           slug: "garbage-cream-job-interview",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400514201/garbage-cream-job-interview",
@@ -326,6 +342,7 @@ const data = {
         {
           name: "Prembus Bulbeeny",
           slug: "prembus-bulbeeny",
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#prembus-bulbeeny",
@@ -344,6 +361,7 @@ const data = {
         {
           name: "Race you to Single Point Consciousness",
           slug: "race-you-to-single-point-consciousness",
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#race-you-to-single-point-consciousness",
@@ -362,6 +380,7 @@ const data = {
         {
           name: "Shards in Energon Soup",
           slug: "shards-in-energon-soup",
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#shards-in-energon-soup",
@@ -380,6 +399,7 @@ const data = {
         {
           name: "Shared Hair",
           slug: "shared-hair",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
@@ -399,6 +419,7 @@ const data = {
         {
           name: "West Meadow Beak Horn",
           slug: "west-meadow-beak-horn",
+          active: true,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/listing/386895490/west-meadow-beak-horn",
@@ -413,6 +434,25 @@ const data = {
           description: [
             "In the West Meadow sentient cutaneous horns can sometimes be found, sprouting from the turf. They can provide answers if you ask the right questions.",
             "A 7.1\" x 9.7\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+        {
+          name: "Choblet Mound Trifectus",
+          slug: "choblet-mound-trifecta",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "#choblet-mound-trifecta",
+          images: [
+            {
+              name: "full",
+              url: "img/choblet-mound-trifecta.jpg",
+              width: 3200,
+              height: 4348,
+            },
+          ],
+          description: [
+            "TODO - describe - facts - w & h - post on etsy",
           ]
         },
       ]
