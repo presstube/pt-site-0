@@ -259,7 +259,7 @@ const data = {
         {
           name: "Traculent Squesh",
           slug: "tbd-1",
-          active: true,
+          active: false,
           price: 250,
           sold: false,
           shopURL: "#tbd-1",
@@ -378,13 +378,13 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/shop/presstube",
+          shopURL: "https://www.etsy.com/listing/463656373/prembus-bulbeeny",
           images: [
             {
               name: "full",
               url: "img/prembus-bulbeeny.jpg",
-              width: 2000,
-              height: 2646,
+              width: 0,
+              height: 0,
             },
           ],
           description: [
@@ -398,13 +398,13 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/shop/presstube",
+          shopURL: "https://www.etsy.com/listing/463659623/race-to-single-point",
           images: [
             {
               name: "full",
               url: "img/race-you-to-single-point-consciousness.jpg",
-              width: 3600,
-              height: 5560,
+              width: 0,
+              height: 0,
             },
           ],
           description: [
@@ -415,7 +415,7 @@ const data = {
         {
           name: "Soup",
           slug: "shards-in-energon-soup",
-          active: true,
+          active: false,
           price: 250,
           sold: false,
           shopURL: "https://www.etsy.com/shop/presstube",
@@ -423,8 +423,8 @@ const data = {
             {
               name: "full",
               url: "img/shards-in-energon-soup.jpg",
-              width: 2000,
-              height: 2653,
+              width: 0,
+              height: 0,
             },
           ],
           description: [
@@ -439,13 +439,13 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/shop/presstube",
+          shopURL: "https://www.etsy.com/listing/450178088/choblet-mound-trifecta",
           images: [
             {
               name: "full",
               url: "img/choblet-mound-trifecta.jpg",
-              width: 3200,
-              height: 4348,
+              width: 0,
+              height: 0,
             },
           ],
           description: [
@@ -460,13 +460,13 @@ const data = {
           active: true,
           price: 250,
           sold: false,
-          shopURL: "https://www.etsy.com/shop/presstube",
+          shopURL: "https://www.etsy.com/listing/450178538/convergent-suspicion-vortex",
           images: [
             {
               name: "full",
               url: "img/convergent-suspicion-vortex.jpg",
-              width: 2000,
-              height: 2744,
+              width: 0,
+              height: 0,
             },
           ],
           description: [
