@@ -8,12 +8,12 @@ export default class SketchbookUnit extends React.Component {
     super(props)
   }
 
-  state = {
-    active: true,
-  }
+  // state = {
+  //   active: true,
+  // }
 
   render () {
-    const {active} = this.state
+    // const {active} = this.state
     const {data} = this.props
     const {name, slug, price, sold, shopURL, images, description} = data
     const image = _.first(images)
@@ -40,7 +40,7 @@ export default class SketchbookUnit extends React.Component {
           }}
         >
           <h2>{name}</h2>
-          {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
+          <p>{_.last(description)}</p>
           <h3>
             <a
               href={shopURL}
@@ -54,3 +54,8 @@ export default class SketchbookUnit extends React.Component {
     )
   }
 }
+
+
+/*
+          {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
+*/

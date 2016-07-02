@@ -7,6 +7,28 @@ const data = {
     {
       name: "Sketchbook",
       units: [
+
+        {
+          name: "Shared Hair",
+          slug: "shared-hair",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
+          images: [
+            {
+              name: "full",
+              url: "img/shared-hair.jpg",
+              width: 3000,
+              height: 4537,
+            },
+          ],
+          description: [
+            "A formidable pair boasting conjoined energy hair.",
+            "A 7.5\" x 11.3\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
         {
           name: "West Meadow Beak Horn",
           slug: "west-meadow-beak-horn",
@@ -71,39 +93,6 @@ const data = {
         },
 
         {
-          name: "Dark Lord Grocery Delivery",
-          slug: "dark-lord-grocery-delivery",
-          active: true,
-          price: 250,
-          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery",
-          sold: true,
-          images: [
-            {
-              name: "full",
-              url: "img/dark-lord-grocery-delivery.jpg",
-              width: 3700,
-              height: 4892,
-            },
-            {
-              name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"       
-            },
-            {
-              name: "detail 2",
-              url: "img/dark-lord-grocery-delivery-d2.jpg"
-            },
-            {
-              name: "detail 3",
-              url: "img/dark-lord-grocery-delivery-d3.jpg"
-            },
-          ],
-          description: [
-            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries.",
-            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-
-        {
           name: "Array of Moments",
           slug: "array-of-moments",
           active: true,
@@ -143,26 +132,7 @@ const data = {
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
-        {
-          name: "Convergent Suspicion Vortex",
-          slug: "convergent-suspicion-vortex",
-          active: true,
-          price: 250,
-          sold: true,
-          shopURL: "#convergent-suspicion-vortex",
-          images: [
-            {
-              name: "full",
-              url: "img/convergent-suspicion-vortex.jpg",
-              width: 2000,
-              height: 2744,
-            },
-          ],
-          description: [
-            "Do they know?",
-            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
+
         {
           name: "Crispin's Knoblets",
           slug: "crispins-knoblets",
@@ -266,9 +236,30 @@ const data = {
         },
 
         {
-          name: "TBD",
+          name: "Brumbic Formiculum",
+          slug: "brenzored-trabient",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
+          images: [
+            {
+              name: "full",
+              url: "img/brumbic-formiculum.jpg",
+              width: 3000,
+              height: 3969,
+            },
+          ],
+          description: [
+            "Velvety curvaceous verticals in a gentle s-curve soup. Dense packets of roughshod spuckings attract larger aerated gundies.",
+            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Petri series.",
+          ]
+        },
+
+        {
+          name: "Traculent Squesh",
           slug: "tbd-1",
-          active: false,
+          active: true,
           price: 250,
           sold: false,
           shopURL: "#tbd-1",
@@ -282,8 +273,10 @@ const data = {
           ],
           description: [
             "",
+            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Petri series.",
           ]
         },
+
         {
           name: "Energy Mustache Goblet",
           slug: "energy-mustache-goblet",
@@ -347,54 +340,45 @@ const data = {
         },
 
         {
-          name: "Brumbic Formiculum",
-          slug: "brenzored-trabient",
+          name: "Dark Lord Grocery Delivery",
+          slug: "dark-lord-grocery-delivery",
           active: true,
           price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400316175/brumbic-formiculum",
+          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery",
+          sold: true,
           images: [
             {
               name: "full",
-              url: "img/brumbic-formiculum.jpg",
-              width: 3000,
-              height: 3969,
+              url: "img/dark-lord-grocery-delivery.jpg",
+              width: 3700,
+              height: 4892,
             },
-          ],
-          description: [
-            "Velvety curvaceous verticals in a gentle s-curve soup. Dense packets of roughshod spuckings attract larger aerated gundies.",
-            "A 8\" x 10.7\" original sketchbook drawing from the Psychic Vomit Petri series.",
-          ]
-        },
-
-        {
-          name: "Shared Hair",
-          slug: "shared-hair",
-          active: true,
-          price: 250,
-          sold: false,
-          shopURL: "https://www.etsy.com/listing/400391895/shared-hair",
-          images: [
             {
-              name: "full",
-              url: "img/shared-hair.jpg",
-              width: 3000,
-              height: 4537,
+              name: "detail 1",
+              url: "img/dark-lord-grocery-delivery-d1.jpg"
+            },
+            {
+              name: "detail 2",
+              url: "img/dark-lord-grocery-delivery-d2.jpg"
+            },
+            {
+              name: "detail 3",
+              url: "img/dark-lord-grocery-delivery-d3.jpg"
             },
           ],
           description: [
-            "A formidable pair boasting conjoined energy hair.",
-            "A 7.5\" x 11.3\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries.",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
 
         {
           name: "Prembus Bulbeeny",
           slug: "prembus-bulbeeny",
-          active: false,
+          active: true,
           price: 250,
           sold: false,
-          shopURL: "#prembus-bulbeeny",
+          shopURL: "https://www.etsy.com/shop/presstube",
           images: [
             {
               name: "full",
@@ -405,15 +389,16 @@ const data = {
           ],
           description: [
             "TODO: - re-export image - write description - post on shop",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
         {
-          name: "Race you to Single Point Consciousness",
+          name: "Race to Single Point",
           slug: "race-you-to-single-point-consciousness",
-          active: false,
+          active: true,
           price: 250,
           sold: false,
-          shopURL: "#race-you-to-single-point-consciousness",
+          shopURL: "https://www.etsy.com/shop/presstube",
           images: [
             {
               name: "full",
@@ -424,15 +409,16 @@ const data = {
           ],
           description: [
             "TODO: - write description - post on shop",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
         {
-          name: "Shards in Energon Soup",
+          name: "Soup",
           slug: "shards-in-energon-soup",
-          active: false,
+          active: true,
           price: 250,
           sold: false,
-          shopURL: "#shards-in-energon-soup",
+          shopURL: "https://www.etsy.com/shop/presstube",
           images: [
             {
               name: "full",
@@ -443,16 +429,17 @@ const data = {
           ],
           description: [
             "TODO: - re-export image - write description - post on shop",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Petri series.",
           ]
         },
 
         {
-          name: "Choblet Mound Trifectus",
+          name: "Choblet Mound Trifecta",
           slug: "choblet-mound-trifecta",
-          active: false,
+          active: true,
           price: 250,
           sold: false,
-          shopURL: "#choblet-mound-trifecta",
+          shopURL: "https://www.etsy.com/shop/presstube",
           images: [
             {
               name: "full",
@@ -463,8 +450,31 @@ const data = {
           ],
           description: [
             "TODO - describe - facts - w & h - post on etsy",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
+
+        {
+          name: "Convergent Suspicion Vortex",
+          slug: "convergent-suspicion-vortex",
+          active: true,
+          price: 250,
+          sold: false,
+          shopURL: "https://www.etsy.com/shop/presstube",
+          images: [
+            {
+              name: "full",
+              url: "img/convergent-suspicion-vortex.jpg",
+              width: 2000,
+              height: 2744,
+            },
+          ],
+          description: [
+            "Do they know?",
+            "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
       ]
     }
   ]
