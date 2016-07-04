@@ -8,16 +8,9 @@ export default class SketchbookUnit extends React.Component {
     super(props)
   }
 
-  // state = {
-  //   active: true,
-  // }
-
   render () {
-    // const {active} = this.state
     const {data} = this.props
-    const {name, slug, price, sold, shopURL, images, description} = data
-    const image = _.first(images)
-    const {url: imageURL} = image
+    const {name, slug, price, sold, shopURL, description, thumb, big} = data
 
     return (
       <div
@@ -27,11 +20,13 @@ export default class SketchbookUnit extends React.Component {
           marginBottom: "20%"
         }}
       >
-        <img
-          src={imageURL}
-          width="100%"
-          height="auto"
-        />
+        <a href={big}>
+          <img
+            src={thumb}
+            width="100%"
+            height="auto"
+          />
+        </a>
         <div
           style={{
             paddingLeft: C.spacing / 2,
@@ -42,10 +37,7 @@ export default class SketchbookUnit extends React.Component {
           <h2>{name}</h2>
           <p>{_.last(description)}</p>
           <h3>
-            <a
-              href={shopURL}
-              // target="_blank"
-            >
+            <a href={shopURL}>
               {sold ? "SOLD" : `BUY: $${price}`}
             </a>
           </h3>
@@ -54,8 +46,3 @@ export default class SketchbookUnit extends React.Component {
     )
   }
 }
-
-
-/*
-          {description.map((fragment, index) => <p key={index}>{fragment}</p>)}
-*/
