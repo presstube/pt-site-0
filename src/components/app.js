@@ -92,14 +92,7 @@ export default class App extends React.Component {
             >
               {projectName}
             </h1>
-            <h2
-              style={{
-                paddingLeft: C.spacing / 2,
-                paddingRight: C.spacing / 2,
-                marginTop: 0,
-                marginBottom: C.spacing,
-              }}
-              >Original pen drawings for sale.</h2>
+
             {
               activeUnits.map((data, index) => {
                 return (
@@ -120,6 +113,16 @@ export default class App extends React.Component {
 
 
 /*
+            <h2
+              style={{
+                paddingLeft: C.spacing / 2,
+                paddingRight: C.spacing / 2,
+                marginTop: 0,
+                marginBottom: C.spacing,
+              }}
+              >Original pen drawings for sale.</h2>
+
+
             <img
               src="img/bashful-fringe.jpg"
               width="100%"

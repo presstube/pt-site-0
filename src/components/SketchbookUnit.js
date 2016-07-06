@@ -38,7 +38,7 @@ export default class SketchbookUnit extends React.Component {
           <p>{_.last(description)}</p>
           <h3>
             <a href={shopURL}>
-              {sold ? "SOLD" : `BUY: $${price}`}
+              {sold ? "SOLD" : `BUY: $${price} USD`}
             </a>
           </h3>
         </div>
