@@ -31,6 +31,42 @@ const data = {
           ]
         },
 
+
+        {
+          name: "Dark Lord Grocery Delivery",
+          slug: "dark-lord-grocery-delivery",
+          active: true,
+          price: 250,
+          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery",
+          sold: true,
+          thumb: "img/sketchbook/thumb/dark-lord-grocery-delivery.jpg",
+          big: "img/sketchbook/big/presstubecom-jamespaterson-2016-dark-lord-grocery-delivery.jpg",
+          images: [
+            {
+              name: "big",
+              url: "img/dark-lord-grocery-delivery.jpg",
+              width: 3700,
+              height: 4892,
+            },
+            {
+              name: "detail 1",
+              url: "img/dark-lord-grocery-delivery-d1.jpg"
+            },
+            {
+              name: "detail 2",
+              url: "img/dark-lord-grocery-delivery-d2.jpg"
+            },
+            {
+              name: "detail 3",
+              url: "img/dark-lord-grocery-delivery-d3.jpg"
+            },
+          ],
+          description: [
+            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries.",
+            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
+          ]
+        },
+
         {
           name: "West Meadow Beak Horn",
           slug: "west-meadow-beak-horn",
@@ -368,41 +404,6 @@ const data = {
             "The enthusiasm is palpable. Ready sir, yes! Been ready all my life. Proud and smelly. Crisp and fetid. Garbage cream dollop against regal boxy stripes.",
             "The power triangle, though tiny, conducts a ferocious interrogation.",
             "A 7.1\" x 9.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
-          ]
-        },
-
-        {
-          name: "Dark Lord Grocery Delivery",
-          slug: "dark-lord-grocery-delivery",
-          active: true,
-          price: 250,
-          shopURL: "https://www.etsy.com/listing/400376213/dark-lord-grocery-delivery",
-          sold: true,
-          thumb: "img/sketchbook/thumb/dark-lord-grocery-delivery.jpg",
-          big: "img/sketchbook/big/presstubecom-jamespaterson-2016-dark-lord-grocery-delivery.jpg",
-          images: [
-            {
-              name: "big",
-              url: "img/dark-lord-grocery-delivery.jpg",
-              width: 3700,
-              height: 4892,
-            },
-            {
-              name: "detail 1",
-              url: "img/dark-lord-grocery-delivery-d1.jpg"
-            },
-            {
-              name: "detail 2",
-              url: "img/dark-lord-grocery-delivery-d2.jpg"
-            },
-            {
-              name: "detail 3",
-              url: "img/dark-lord-grocery-delivery-d3.jpg"
-            },
-          ],
-          description: [
-            "Not all dark lords have glamorous jobs like stealing souls and ruling galaxies. Some deliver dark groceries.",
-            "An 8\" x 10.6\" original sketchbook drawing from the Psychic Vomit Portrait series.",
           ]
         },
 
