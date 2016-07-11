@@ -344,7 +344,7 @@ const data = {
           slug: "energy-mustache-goblet",
           active: true,
           price: 250,
-          sold: false,
+          sold: true,
           shopURL: "https://www.etsy.com/listing/400377945/energy-mustache-goblet",
           thumb: "img/sketchbook/thumb/energy-mustache-goblet.jpg",
           big: "img/sketchbook/big/presstubecom-jamespaterson-2016-energy-mustache-goblet.jpg",
